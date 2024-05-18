@@ -1,0 +1,33 @@
+  
+body {
+    margin: 0;
+    font-family:'Inter';
+  }
+
+  .navbar-nav .nav-link.active {
+    font-weight: 600;
+  
+    color:#053CC9 !important;
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: 200px; /* Atur tinggi yang diinginkan */
+    object-fit: cover; /* Pastikan gambar mencakup area dengan proporsi yang benar */
+  }
+   
+
+  .navbar-nav .nav-item :hover{
+    color: #053CC9 !important;
+  }
+  
+  .nav-item{
+    padding: 10px;
+  }
+  .col-lg-6{
+    margin-right: 20px;
+  }
+  .effect{
+    margin-top: -30px;
+  }
+

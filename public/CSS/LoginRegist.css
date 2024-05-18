@@ -1,0 +1,104 @@
+* {
+  font-family: 'Inter';
+}
+
+body {
+  background-image: url('/ASSETS/bg_login.png');
+  background-size: cover;
+}
+
+.container {
+  position: relative;
+  margin-top: 0;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.glassmorphism-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 35%;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transform: translate(-50%, -50%);
+  background: rgba(249, 249, 249, 0.75);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.8);
+}
+
+.login-section {
+  margin: 10px;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label, input, button {
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+  font-family: 'Poppins';
+  vertical-align: middle; 
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-right: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  vertical-align: middle; 
+}
+
+h2 {
+  font-size: 28px;
+  color: #333;
+  font-weight: 600;
+  font-family: 'Poppins';
+  margin-bottom: 20px;
+}
+
+
+
+button {
+  font-family: 'Poppins';
+  font-size: 16px;
+  padding: 10px;
+  background-color: #0B77FA;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+span {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins';
+}
+
+a {
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 5px;
+  font-family: 'Poppins';
+}

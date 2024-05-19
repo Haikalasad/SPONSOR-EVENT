@@ -19,35 +19,6 @@ class CompanyController extends Controller
         return view('company', ['PopularPerusahaans' => $PopularPerusahaans, 'Perusahaan' => $Perusahaan]);
     }
 
-    // fungsi untuk upload Perushaan ke database
-    public function store(Request $request)
-    {
-        // Validasi input
-        $request->validate([
-            'nama_perusahaan' => 'required',
-            'email' => 'required',
-            'contact_person' => 'required',
-            'deskripsi_perusahaan' => 'required',
-            'syarat_ketentuan' => 'required',
-            'gambar_perusahaan' => 'nullable|image|mimes:jpeg,png,jpg,gif,webp',
-            'alamat_perusahaan' => 'required',
-        ]);
-
-        $gambar_perusahaan = $this->uploadFile($request, 'gambar_perusahaan', 'gambar_perusahaan');
-
-        $Perusahaan = Perusahaan::create([
-            'nama_perusahaan' => $request->input('nama_perusahaan'),
-            'email' => $request->input('email'),
-            'contact_person' => $request->input('contact_person'),
-            'deskripsi_perusahaan' => $request->input('deskripsi_perusahaan'),
-            'syarat_ketentuan' => $request->input('syarat_ketentuan'),
-            'gambar_perusahaan' => $gambar_perusahaan,
-            'alamat_perusahaan' => $request->input('alamat_perusahaan'),
-        ]);
-
-        return redirect('company')->with('success', 'Perushaan berhasil dibuat.');
-    }
-
     public function searchPerusahaan(Request $request)
     {
         $search = $request->input('search');
@@ -75,7 +46,6 @@ class CompanyController extends Controller
 
     }
     
-
     public function storeSponsor(Request $request)
     {
         $userId = auth()->id(); 
@@ -118,7 +88,7 @@ class CompanyController extends Controller
             'status_transfer' => 1, 
         ]);
     
-        return redirect('company')->with('success', 'Pengajuan sponsor berhasil disimpan.');
+        return redirect()->back()->with('message', 'Pengajuan sponsor berhasil diupload');
     }
     
     private function uploadFile(Request $request, $key, $directory)

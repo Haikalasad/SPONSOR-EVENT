@@ -24,7 +24,7 @@ body {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   transform: translate(-50%, -50%);
-  background: rgba(249, 249, 249, 0.75);
+  background: rgba(249, 249, 249, 0.9);
   border-radius: 12px;
   padding: 20px;
   text-align: center;
@@ -50,6 +50,7 @@ label {
   display: block;
   margin-bottom: 5px;
   text-align: left;
+  margin-right: 20px;
   font-size: 16px;
   color: #333;
   font-weight: 500;
@@ -64,6 +65,8 @@ input {
   border: 1px solid #ccc;
   border-radius: 5px;
   vertical-align: middle; 
+
+font-family: 'inter';
 }
 
 h2 {

@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="CSS/services_style.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/fadd57a8f9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <title>Event</title>
 
   <style>
@@ -61,9 +63,7 @@
   <!-- navbar section -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container">
-      <img src="ASSETS/logo.png" style=" width: 180px;
-  height: 40px;
-" />
+      <img src="ASSETS/logo.png" style=" width: 180px;height: 40px;"/>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -114,7 +114,7 @@
     </div>
   </nav>
 
-  <div class="row">
+  <div class="row" data-aos="fade-up">
     <div class="col-md-12 text-center">
       <h1 class="title" style="margin-top: 70px; margin-bottom: 10px; font-weight: 700; font-size: 40px;">List Event</h1>
       <p style="margin-bottom: 40px;">Tunggu update kami lainnya!</p>
@@ -129,7 +129,7 @@
     </div>
   </div>
 
-  <section id="New events">
+  <section id="New events" data-aos="fade-up">
     <div class="container mt-5">
       <div class="col-md-12 mb-4">
         <div class="container">
@@ -147,7 +147,7 @@
 
 
 
-      <div class="row">
+      <div class="row" data-aos="fade-up">
         @foreach ($newEvents as $event)
         <div class="col-md-6 mb-4">
           <div class="card h-100 position-relative"  style="border-radius: 30px;">
@@ -213,7 +213,7 @@
 
 <footer>
 
-  <div class="row justify-content-center" style="background-color: #000033;">
+  <div class="row justify-content-center" style="background-color: #000033;" data-aos="fade-up">
     <div class="col-md-3 m-4 align-content-center mx-auto">
       <img src="ASSETS/Logo_white.png" alt="Sponsor Event" style="width: 250px; height : 80px;">
       <p style="color: white; margin-top:20px;">Katalog event bagi mahasiswa
@@ -254,6 +254,14 @@
         }
       });
     });
+  });
+</script>
+
+
+<script>
+  AOS.init({
+    duration: 1500, 
+    once: true, 
   });
 </script>
 

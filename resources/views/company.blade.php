@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="CSS/event_style.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/fadd57a8f9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <title>Company</title>
 </head>
 
@@ -81,7 +83,7 @@ $perusahaan = \App\Models\Perusahaan::all();
   </nav>
 
 
-  <div class="row">
+  <div class="row" data-aos="fade-up">
     <div class="col-md-12 text-center">
       <h1 class="title" style="margin-top: 70px; margin-bottom: 10px; font-weight: 700; font-size: 40px;">List Perusahaan</h1>
       <p style="margin-bottom: 40px;">Anda dapat mengajukan sponsor ke semua perusahaan dibawah ini!</p>
@@ -98,7 +100,7 @@ $perusahaan = \App\Models\Perusahaan::all();
 
 
 
-  <section class="pengajuan-saya">
+  <section class="pengajuan-saya" data-aos="fade-up">
   <div class="container">
     <div class="row">
       <div class="col-md-12 mb-4">
@@ -163,7 +165,7 @@ $perusahaan = \App\Models\Perusahaan::all();
 
 
 
-  <section>
+  <section data-aos="fade-up">
     <div class="container">
       <div class="col-md-12 mb-4">
         <h1 style="text-align: left;font-weight : 600; font-size : 28px;margin-top:90px">Paling diminati</h1>
@@ -194,14 +196,14 @@ $perusahaan = \App\Models\Perusahaan::all();
 
   </section>
 
-  <section id="All events" style="margin-top:50px">
+  <section id="All events" style="margin-top:50px" data-aos="fade-up">
     <div class="container">
       <div class="col-md-12 mb-4">
         <h1 style="text-align: left;font-weight : 600; font-size : 28px;">Semua perusahaan</h1>
         <hr style="border-top: 2px solid #737373;margin-bottom:30px">
       </div>
 
-      <div class="row">
+      <div class="row" data-aos="fade-up">
 
         @foreach ($Perusahaan as $perusahaan)
         <div class="col-md-4 col-sm-12 mb-5">
@@ -228,7 +230,7 @@ $perusahaan = \App\Models\Perusahaan::all();
 
 <footer>
 
-  <div class="row justify-content-center" style="background-color: #000033;">
+  <div class="row justify-content-center" style="background-color: #000033;" data-aos="fade-up">
     <div class="col-md-3 m-4 align-content-center mx-auto">
       <img src="../ASSETS/Logo_white.png" alt="Sponsor Event" style="width: 250px; height : 80px;">
       <p style="color: white; margin-top:20px;">Katalog event bagi mahasiswa
@@ -246,4 +248,12 @@ $perusahaan = \App\Models\Perusahaan::all();
   </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+<script>
+  AOS.init({
+    duration: 1500, 
+    once: true, 
+  });
+</script>
 </html>

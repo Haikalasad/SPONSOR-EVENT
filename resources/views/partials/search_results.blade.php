@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../CSS/event_style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/fadd57a8f9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <title>Hasil pencarian</title>
 </head>
 
@@ -24,16 +26,16 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/home">Home</a>
+            <a class="nav-link" href="/home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="/event">Catalog</a>
+            <a class="nav-link active" aria-current="page"  href="/event">Catalog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Company</a>
+            <a class="nav-link" href="/company">Company</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/about">About</a>
@@ -70,7 +72,7 @@
 
 
 
-  <div class="row">
+  <div class="row" data-aos="fade-up">
     <div class="col-md-12 text-center">
       <h1 class="title" style="margin-top: 70px; margin-bottom: 10px; font-weight: 700; font-size: 40px;">List Event</h1>
       <p style="margin-bottom: 40px;">Tunggu update kami lainnya!</p>
@@ -88,7 +90,7 @@
   @if($searchResults->isEmpty())
   <p>No events found.</p>
   @else
-  <div class="container">
+  <div class="container" data-aos="fade-up">
       <div class="row">
           @foreach($searchResults as $event)
           <div class="col-md-4 col-sm-12 mb-4">
@@ -114,7 +116,7 @@
 
   <footer>
 
-  <div class="row justify-content-center" style="background-color: #000033;">
+  <div class="row justify-content-center" style="background-color: #000033;" data-aos="fade-up">
     <div class="col-md-3 m-4 align-content-center mx-auto">
       <img src="../ASSETS/Logo_white.png" alt="Sponsor Event" style="width: 250px; height : 80px;">
       <p style="color: white; margin-top:20px;">Katalog event bagi mahasiswa
@@ -132,6 +134,14 @@
   </div>
 </footer>
 </body>
+
+
+<script>
+  AOS.init({
+    duration: 1500, 
+    once: true, 
+  });
+</script>
 
 </html>
 

@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="CSS/services_style.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/fadd57a8f9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <title>Services</title>
 </head>
 
@@ -71,11 +73,11 @@
   <div class="container">
 
 
-    <div class="row g-5 justify-content-around ">
-      <div class="col-md-3 align-content-center">
+    <div class="row g-5 justify-content-around">
+      <div class="col-md-3 align-content-center" data-aos="fade-up">
         <img src="ASSETS/pict1.png" class="responsive-image" style="width: 300px; height : 570px;" />
       </div>
-      <div class="col-md-5 mt-5" style="text-align: center;">
+      <div class="col-md-5 mt-5" style="text-align: center;" data-aos="fade-up">
 
         <ul style="font-size : 22px;font-weight : 500;color : #9EA3B5;justify-content:center; display:flex;margin-top:30px">
           <p style="padding: 20px;margin: 10px">Event</p>
@@ -105,7 +107,7 @@
           <P>Akses dimana<br>saja</P>
         </ul>
       </div>
-      <div class="col-md-3 align-content-center">
+      <div class="col-md-3 align-content-center" data-aos="fade-up">
         <img src="ASSETS/pict2.png"class="responsive-image" style="width: 300px; height : 570px" />
       </div>
     </div>
@@ -115,8 +117,8 @@
 
   <!-- hero section -->
 
-  <section id="hero-section" style="margin-top:120px">
-  <div class="container">
+  <section id="hero-section" style="margin-top:120px" >
+  <div class="container" data-aos="fade-up">
 
     <div class="row justify-content-center m-5">
       <div class="col-lg-6 col-md-4 mt-4 align-content-center">
@@ -165,8 +167,8 @@
 
 
   <!-- shortcut servcice section -->
-  <section id="shortcut_service mt-5" style="margin-top:120px;padding:20px">
-  <div class="container">
+  <section id="shortcut_service mt-5" style="margin-top:120px;padding:20px" data-aos="fade-up">
+  <div class="container" data-aos="fade-up">
   <div class="col-md-12 m-4 mb-5">
     <h1 style="text-align: left;margin-bottom:30px;font-weight : 600; font-size : 48px;">Katalog Event Kampus</h1>
     <hr style="border-top: 2px solid #737373;margin-bottom:10px">
@@ -249,7 +251,7 @@
 
 
   <section id="shortcut_service mt-5" style="margin-top:70px;padding:20px">
-  <div class="container">
+  <div class="container" data-aos="fade-up">
     <div class="col-md-12 m-4 mb-5">
       <h1 style="text-align: left;margin-bottom:30px;font-weight : 600; font-size : 48px;">Pengajuan Sponsorship</h1>
       <hr style="border-top: 2px solid #737373;margin-bottom:10px">
@@ -297,7 +299,7 @@
   </section>
 
   <section id="shortcut_service mt-5" style="margin-top:90px">
-  <div class="container">
+  <div class="container" data-aos="fade-up">
     <div class="col-md-12 m-4 mb-5">
         <h1 style="text-align: left;margin-bottom:30px;font-weight : 600; font-size : 48px;">Pengajuan Sponsorship</h1>
         <hr style="border-top: 2px solid #737373;margin-bottom:10px">
@@ -326,7 +328,7 @@
 
   <!-- Logo section -->
   <section id="logo-section" style="margin-top:120px;margin-bottom:120px">
-    <div class="container">
+    <div class="container" data-aos="fade-up">
       <div class="col-md-12 m-4 mb-5">
             <h1 style="text-align: left;margin-bottom:30px;font-weight : 600; font-size : 48px;">Pengajuan Sponsorship</h1>
             <hr style="border-top: 2px solid #737373;margin-bottom:10px">
@@ -358,7 +360,7 @@
 
   <footer>
 
-    <div class="row justify-content-center" style="background-color: #000033;">
+    <div class="row justify-content-center" style="background-color: #000033;" data-aos="fade-up">
       <div class="col-md-3 m-4 align-content-center mx-auto">
         <img src="ASSETS/Logo_white.png" alt="Sponsor Event" style="width: 250px; height : 80px;">
         <p style="color: white; margin-top:20px;">Katalog event bagi mahasiswa
@@ -381,4 +383,12 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+
+
+<script>
+  AOS.init({
+    duration: 1500, 
+    once: true, 
+  });
+</script>
 </html>

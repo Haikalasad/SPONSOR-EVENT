@@ -52,7 +52,7 @@ class EventController extends Controller
             'id_kategori' => $request->input('kategori_acara'), 
         ]);
 
-        return redirect('/event')->with('success', 'Event berhasil dibuat.');
+        return redirect()->back()->with('message', 'Event successfully uploaded!');
     }
     public function editEvent($id)
     {

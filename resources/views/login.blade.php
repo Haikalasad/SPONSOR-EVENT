@@ -7,12 +7,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/LoginRegist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <title>Sign In</title>
 </head>
 
 <body>
 
-<div class="container">
+<div class="container"  data-aos="fade-up">
     
     <div class="glassmorphism-card">
         <!-- Login Section -->
@@ -32,13 +34,19 @@
             </form>
 
             <div class="SignupCTA">
-                <span>Don’t have an account? Create now  <a href="/signup" class="SignUpLink"> Sign up</a> </span>
+                <span>Belum punya akun? Buat disini <a href="/signup" class="SignUpLink"> Sign up</a> </span>
                
             </div>
         </div>
     </div>
 </div>
 
+<script>
+  AOS.init({
+    duration: 1500, 
+    once: true, 
+  });
+</script>
 
 </body>
 </html>

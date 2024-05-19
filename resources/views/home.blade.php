@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="CSS/home_style.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/fadd57a8f9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </head>
 </head>
 
@@ -87,7 +89,6 @@
           </p>
           <a class="btn btn-primary" href="{{ route('company') }}" style="width: 100px;height:40px; background-color: #053CC9;">Ayo cari</a>
         </div>
-  
         <div class="col-lg-4 col-md-6 col-sm-12 justify-center">
           <img src="ASSETS/Gambar_hero.png" />
         </div>
@@ -103,12 +104,12 @@
 
 
 
-  <!-- shortcut servcice section -->
-  <section id="shortcut_service mt-5">
+  <!-- shortcut servcice section --> 
+  <section id="shortcut_service mt-5" data-aos="fade-up">
     <div class="container">
       <div class="row g-4 justify-content-center">
         <h1 style="text-align: center; margin-top : 70px;margin-bottom : 70px; font-weight : 700; font-size : 40px;">Layanan kami</h1>
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="fade-up">
           <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">
               <div class="col-md-4 align-content-center p-5">
@@ -125,7 +126,7 @@
           </div>
         </div>
   
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="fade-up">
           <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">
               <div class="col-md-4 align-content-center p-5">
@@ -142,8 +143,8 @@
           </div>
         </div>
       </div>
-      <div class="row g-4 justify-content-center mt-2 ">
-        <div class="col-md-4">
+      <div class="row g-4 justify-content-center mt-2 " data-aos="fade-up">
+        <div class="col-md-4" data-aos="fade-up">
           <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">
               <div class="col-md-4 align-content-center p-5">
@@ -159,7 +160,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="fade-up">
           <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">
               <div class="col-md-4 align-content-center p-5">
@@ -182,8 +183,8 @@
   <!-- Section cara mendapatkan sponsor -->
 
 
-  <section id="HowtoSponsor">
-    <div class="row justify-content-center m-4 align-content-center">
+  <section id="HowtoSponsor" data-aos="fade-up">
+    <div class="row justify-content-center m-4 align-content-center" data-aos="fade-up">
       <div class="title">
         <h1 style="text-align: center; margin-top: 70px;margin-bottom: 10px; font-weight: 700; font-size: 40px;">Gimana sih cara untuk mengajukan sponsor? </h1>
         <p style="text-align: center; margin-bottom: 70px;color:#737373;">Pengajuan sponsor melewati kami,kami menyediakan list perusahaan yang dapat anda ajukan sponsor.Ikuti langkah-langkah<br>dibawah ini untuk melakukan pengajuan sponsor untuk kegiatan anda</p>
@@ -220,7 +221,7 @@
 
 
 
-  <section id="HowtoSponsor">
+  <section id="HowtoSponsor" data-aos="fade-up">
     <div class="row justify-content-center m-4 align-content-center">
       <div class="title">
         <h1 style="text-align: center; margin-top: 70px;margin-bottom: 10px; font-weight: 700; font-size: 40px;">Upload event caranya gimana?</h1>
@@ -264,7 +265,7 @@
   <!-- Event yang berlangsung -->
 
 
-  <section id="live_event">
+  <section id="live_event" data-aos="fade-up">
     <div class="row justify-content-center m-4 align-content-center">
       <div class="title">
         <h1 style="text-align: center; margin-top: 70px;margin-bottom: 10px; font-weight: 700; font-size: 40px;">Akan berlangsung</h1>
@@ -293,7 +294,7 @@
 
 
   <!-- Logo section -->
-  <section id="logo-section" style="margin-top:120px;margin-bottom:120px">
+  <section id="logo-section" style="margin-top:120px;margin-bottom:120px" data-aos="fade-up">
     <div class="container">
       <div class="col-md-12 m-4 mb-5">
             <h1 style="text-align: left;margin-bottom:30px;font-weight : 600; font-size : 48px;">Mitra Kamip</h1>
@@ -323,7 +324,7 @@
     </div>
   </section>
 
-  <section id="review-section" style="background-color: #053CC9; margin-top:120px;padding : 20px;">
+  <section id="review-section" style="background-color: #053CC9; margin-top:120px;padding : 20px;" data-aos="fade-up">
 
     <div class="title" style="margin-top : 70px;text-align : left;padding-left : 70px;padding-top:10px;">
 
@@ -362,7 +363,7 @@
 
   <footer>
 
-    <div class="row justify-content-center" style="background-color: #000033;">
+    <div class="row justify-content-center" style="background-color: #000033;" data-aos="fade-up">
       <div class="col-md-3 m-4 align-content-center mx-auto">
         <img src="ASSETS/Logo_white.png" alt="Sponsor Event" style="width: 250px; height : 80px;">
         <p style="color: white; margin-top:20px;">Katalog event bagi mahasiswa
@@ -384,5 +385,13 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
+
+
+<script>
+  AOS.init({
+    duration: 1500, 
+    once: true, 
+  });
+</script>
 
 </html>

@@ -12,8 +12,9 @@ body {
 
   .card-img-top {
     width: 100%;
-    height: 200px; /* Atur tinggi yang diinginkan */
-    object-fit: cover; /* Pastikan gambar mencakup area dengan proporsi yang benar */
+    max-height: 200px; 
+    object-fit: contain;
+    margin-bottom: 30px; 
   }
    
 

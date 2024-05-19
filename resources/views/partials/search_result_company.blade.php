@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="../CSS/event_style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/fadd57a8f9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <title>Hasil pencarian</title>
 </head>
 
@@ -41,7 +41,6 @@
                 </ul>
 
                 @auth
-                <!-- Jika pengguna telah terotentikasi, tampilkan foto profil -->
                 <div class="dropdown">
                     <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="{{ asset('storage/' . auth()->user()->photo) }}" alt="{{ auth()->user()->name }}" style="width: 40px; height: 40px; border-radius: 50%;">
@@ -70,7 +69,7 @@
 
 
 
-    <div class="row">
+    <div class="row" data-aos="fade-up">
         <div class="col-md-12 text-center">
             <h1 class="title" style="margin-top: 70px; margin-bottom: 10px; font-weight: 700; font-size: 40px;">List Perusahaan</h1>
             <p style="margin-bottom: 40px;">Anda dapat mengajukan sponsor ke semua perusahaan dibawah ini!</p>
@@ -86,7 +85,7 @@
     </div>
 
     @if($searchResults->isEmpty())
-    <p>No events found.</p>
+    <p style="margin:40px">No events found.</p>
     @else
 
     <div class="container">
@@ -98,7 +97,7 @@
             @foreach($searchResults as $perusahaan)
             <div class="col-md-4 col-sm-12 mb-5">
                 <div class="card h-100">
-                    <img src="{{ asset('storage/' . $perusahaan->gambar_perusahaan) }}" class="card-img-top" alt="{{ $perusahaan->nama_perusahaan }}" style="height: 300px; object-fit: cover;">
+                    <img src="{{ asset('storage/' . $perusahaan->gambar_perusahaan) }}" class="card-img-top" alt="{{ $perusahaan->nama_perusahaan }}" style="height: 350px; object-fit: cover;">
                     <div class="card-body">
                         <h5 class="card-title">{{ \Illuminate\Support\Str::limit($perusahaan->nama_perusahaan, 35) }}</h5>
                         <p class="card-text">{{ \Illuminate\Support\Str::limit($perusahaan->alamat_perusahaan, 70) }}</p>
@@ -115,7 +114,7 @@
 
     <footer>
 
-        <div class="row justify-content-center" style="background-color: #000033;">
+        <div class="row justify-content-center" style="background-color: #000033;" data-aos="fade-up">
             <div class="col-md-3 m-4 align-content-center mx-auto">
                 <img src="../ASSETS/Logo_white.png" alt="Sponsor Event" style="width: 250px; height : 80px;">
                 <p style="color: white; margin-top:20px;">Katalog event bagi mahasiswa
@@ -133,5 +132,13 @@
         </div>
     </footer>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+  AOS.init({
+    duration: 1500, 
+    once: true, 
+  });
+</script>
 
 </html>

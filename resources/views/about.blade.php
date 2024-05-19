@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="/CSS/about_style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/fadd57a8f9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </head>
 </head>
 
@@ -70,7 +72,7 @@
 
     <!-- hero section -->
 
-    <section id="hero-section" style="margin-bottom:80px">
+    <section id="hero-section" style="margin-bottom:80px" data-aos="fade-up">
         <div class="container mt-5">
             <div class="row mb-5 p-5 g-5 justify-content-center">
                 <div class="col-lg-6 col-md-6 align-content-center">
@@ -83,7 +85,7 @@
                     <a class="btn btn-primary" href="{{route('company')}}"  type="submit" style=" width:max-content; height: max-content; font-size: 20px;">Apply now</a>
                 </div>
 
-                <div class="col-lg-6 col-md-6  align-content-center">
+                <div class="col-lg-6 col-md-6 mt-5  align-content-center">
                     <img src="ASSETS/about_hero.png" class="img-fluid" />
                 </div>
             </div>
@@ -91,7 +93,7 @@
     </section>
 
     <section id="achievments" style="margin-bottom:80px;background-color:#F5F7FA">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <div class="row mt-5 p-5">
                 <div class="col-lg-6 col-md-12 mt-4 align-content-center">
                     <h2 style="margin-bottom:37px;font-size:24px">
@@ -164,7 +166,7 @@
     </section>
 
     <section id="latar_belakang" style="margin-bottom:60px">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <div class="row mt-5 p-5">
                 <div class="col-lg-6 col-md-6 col-sm-12 align-content-center">
                     <img src="ASSETS/about_latar.png" class="img-fluid" />
@@ -186,7 +188,7 @@
 
 
     <section id="recomendations" style="margin-bottom:80px;background-color:#F5F7FA">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <div class="row mt-5 p-5">
                 <div class="col-lg-8 col-md-3 me-5 align-content-center">
                     <p style="margin-bottom:20px;font-size:20px;font-weight:400;color:#111827">
@@ -209,7 +211,7 @@
     </section>
 
 
-    <section style="margin-bottom:80px">
+    <section style="margin-bottom:80px" data-aos="fade-up">
     <div class="container">
         <div class="title">
             <h1 style="text-align: center; margin-top: 70px;margin-bottom: 10px; font-weight: 700; font-size: 40px;">Tim Sponsor Event</h1>
@@ -233,7 +235,7 @@
 
 <footer>
 
-    <div class="row justify-content-center" style="background-color: #000033;">
+    <div class="row justify-content-center" style="background-color: #000033;" data-aos="fade-up">
         <div class="col-md-3 m-4 align-content-center mx-auto">
             <img src="ASSETS/Logo_white.png" alt="Sponsor Event" style="width: 250px; height : 80px;">
             <p style="color: white; margin-top:20px;">Katalog event bagi mahasiswa
@@ -251,7 +253,12 @@
     </div>
 </footer>
 
-
+<script>
+  AOS.init({
+    duration: 1500, 
+    once: true, 
+  });
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 

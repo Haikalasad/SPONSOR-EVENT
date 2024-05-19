@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <link rel="stylesheet" href="CSS/LoginRegist.css">
     <style>
         #preview {
@@ -19,8 +21,7 @@
 </head>
 
 <body>
-
-    <div class="container">
+    <div class="container"  data-aos="fade-up">
         <div class="glassmorphism-card">
             <!-- Login Section -->
             <div class="login-section">
@@ -28,23 +29,23 @@
                 <form action="{{ route('storeUser')}}" method="post" enctype="multipart/form-data">
                 @csrf
                     <!-- name input -->
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" placeholder="Enter your name" />
+                    <label for="name">Nama organisasi:</label>
+                    <input type="text" name="name" placeholder="Masukkan nama organisasi kamu" />
 
                     <!-- username input -->
                     <label for="username">Username:</label>
-                    <input type="text" name="username" placeholder="Enter your username" />
+                    <input type="text" name="username" placeholder="Masukkan username organisasi kamu" />
 
                     <!-- email input -->
                     <label for="email">Email:</label>
-                    <input type="text" name="email" placeholder="Enter your email" />
+                    <input type="text" name="email" placeholder="Masukkan email organisasi kamu" />
 
                     <!-- Password Input -->
                     <label for="password">Password:</label>
                     <input type="password" name="password" placeholder="Enter your password" />
 
                     <!-- Profile Picture Input -->
-                    <label for="profile_picture">Profile Picture:</label>
+                    <label for="profile_picture">Foto Profil:</label>
                     <input type="file" name="profile_picture" accept="image/*" id="profile_picture_input" onchange="previewImage(event)">
                     <!-- Preview gambar -->
                     <img id="preview" src="" alt="Preview Image">
@@ -53,7 +54,7 @@
                 </form>
 
                 <div class="SignupCTA">
-                    <span>Already have an account? Sign In now <a href="/" class="SignUpLink"> Sign In</a></span>
+                    <span>Sudah punya akun? sign in sekarang <a href="/" class="SignUpLink"> Sign In</a></span>
                 </div>
             </div>
         </div>
@@ -69,6 +70,14 @@
             reader.readAsDataURL(event.target.files[0]);
         }
     </script>
+
+
+<script>
+  AOS.init({
+    duration: 1500, 
+    once: true, 
+  });
+</script>
 </body>
 
 </html>

@@ -114,26 +114,53 @@
 
 
 
-  <footer>
-
-  <div class="row justify-content-center" style="background-color: #000033;" data-aos="fade-up">
-    <div class="col-md-3 m-4 align-content-center mx-auto">
-      <img src="../ASSETS/Logo_white.png" alt="Sponsor Event" style="width: 250px; height : 80px;">
-      <p style="color: white; margin-top:20px;">Katalog event bagi mahasiswa
-        Telkom University <br>Surabaya dengan
-        penyedia layanan <br>pecarian sponsorship untuk acara.</p>
-    </div>
-
-    <div class="col-md-4 m-5  align-content-center" style="color: white;">
-      <h2 style="margin-bottom: 20px;">Contact Info</h2>
-
-      <p> <i class="fa-solid fa-location-dot" style="color: #ffffff; margin-right : 10px;"></i>Jl. Ketintang No.156, Ketintang, <br>Kec. Gayungan, Surabaya, Jawa Timur 60231</p>
-      <p> <i class="fa-solid fa-phone" style="color: #ffffff;margin-right : 10px;"></i>(330)7891-5568</p>
-      <p> <i class="fa-solid fa-envelope" style="color: #ffffff; margin-right : 10px;"></i>sponsorevent@gmail.com</p>
-    </div>
-  </div>
-</footer>
 </body>
+<footer style="background-color: #000033;">
+    <div class="container p-4">
+      <div class="row mt-4 m-3 justify-content-center">
+        <hr style="border-top: 4px solid #FFFFFF !important;margin-bottom:20px">
+        <div class="col-md-3 align-content-center ">
+          <img src="ASSETS/Logo_white.png" alt="Sponsor Event" style="width: 250px; height : 80px;">
+          <p style="color: white; margin-top:20px;">Katalog event bagi mahasiswa
+            Telkom University <br>Surabaya dengan
+            penyedia layanan <br>pecarian sponsorship untuk acara.</p>
+        </div>
+        <div class="col-md-2 align-content-center" style="color: white;">
+          <P><a href="/home" style="text-decoration: none; "><small class="text-body-secondary" style="color:#2959D3 !important;font-size:16px">Beranda</small></a></P>
+          <P><a href="/services" style="text-decoration: none; "><small class="text-body-secondary" style="color:#ffffff !important;font-size:16px">Layanan Kami</small></a></p>
+          <P><a href="/event" style="text-decoration: none; "><small class="text-body-secondary" style="color:#ffffff !important;font-size:16px">Event Berlangsung</small></a></p>
+          <P><a href="/home#review-section" style="text-decoration: none; "><small class="text-body-secondary" style="color:#ffffff !important;font-size:16px">Testimoni</small></a></p>
+        </div>
+        <div class="col-md-2 align-content-center">
+          <p><a href="/about" style="text-decoration: none;"><small class="text-body-secondary" style="color:#2959D3 !important; font-size:16px;">Tentang kami</small></a></p>
+          <p><a href="/about#latar_belakang" style="text-decoration: none;"><small class="text-body-secondary" style="color:#ffffff !important; font-size:16px;">Latar Belakang</small></a></p>
+          <p><a href="#" style="text-decoration: none;"><small class="text-body-secondary" style="color:#000033 !important; font-size:16px;">___</small></a></p>
+          <p><a href="#" style="text-decoration: none;"><small class="text-body-secondary" style="color:#000033 !important; font-size:16px;">___</small></a></p>
+        </div>
+        <div class="col-md-2 align-content-center">
+          <p><a href="/services" style="text-decoration: none;"><small class="text-body-secondary" style="color:#2959D3 !important; font-size:16px;">Layanan Kami</small></a></p>
+          <p><a href="/home#HowtoSponsor" style="text-decoration: none;"><small class="text-body-secondary" style="color:#ffffff !important; font-size:16px;">Pengajuan Sponsorship</small></a></p>
+          <p><a href="/home#HowtoEvent" style="text-decoration: none;"><small class="text-body-secondary" style="color:#ffffff !important; font-size:16px;">Promosi Acara</small></a></p>
+          <p><a href="#" style="text-decoration: none;"><small class="text-body-secondary" style="color:#000033 !important; font-size:16px;color:#000033">___</small></a></p>
+        </div>
+
+        <div class="col-md-3 align-content-center" style="color: white;">
+          <p><a href="#" style="text-decoration: none;"><small class="text-body-secondary" style="color:#2959D3 !important; font-size:16px;">Info kontak</small></a></p>
+          <p><i class="fa-solid fa-phone" style="color: #ffffff;margin-right : 10px;"></i><a href="#" style="text-decoration: none;"><small class="text-body-secondary" style="color:#ffffff !important; font-size:16px;">: 081359563203</small></a></p>
+          <p><i class="fa-solid fa-location-dot" style="color: #ffffff; margin-right : 10px;"></i><a href="#" style="text-decoration: none;"><small class="text-body-secondary" style="color:#ffffff !important; font-size:16px;">: Jalan Ketintang No.156, Ketintang, Kec.Gayungan, Surabaya, Jawa Timur 60231</small></a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row p-3 justify-content-center" style="background-color:#ffffff">
+      <div class="col-md-12 align-content-end" style="background-color:#ffffff">
+        <p style="color:#5E6E89 !important;margin-left:80px;font-weight:600">©SponsorEvent All Rights Reserved.</p>
+      </div>
+    </div>
+
+  </footer>
+
+
 
 
 <script>

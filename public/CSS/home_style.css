@@ -4,18 +4,15 @@ body {
     font-family:'Inter';
   }
 
-#hero-section h1{
+#hero-section h2{
   font-family:'Inter';
-  font-size: 54px;
+  font-size: 60px;
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
+
 @media (max-width: 991px) {
-  .col-lg-4 {
-    display: none; 
-    width: 300px; 
-  }
   .effect .col-lg-12 {
     display: none; 
   }
@@ -27,17 +24,15 @@ body {
     text-align: center;
   }
 
-
   .col-lg-4 {
     display: none; 
     width: 300px; 
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1080px) {
   .effect {
     display: none; 
-    width: 300px; 
   }
 }
 
@@ -54,6 +49,18 @@ body {
 
   color:#053CC9 !important;
 
+}
+.sponsor-step,.event-step {
+  transition: box-shadow 0.4s ease-in-out;
+  border: 1px solid #d3d3d3;
+  border-radius: 15px; 
+}
+
+.sponsor-step:hover {
+  box-shadow: 0 20px 20px rgba(4, 71, 214, 0.5), 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.event-step:hover {
+  box-shadow: 0 20px 20px rgba(4, 71, 214, 0.5), 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 

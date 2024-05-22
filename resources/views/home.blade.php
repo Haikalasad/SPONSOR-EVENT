@@ -13,6 +13,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </head>
 </head>
+<style>
+  .custom-card {
+    border-radius: 13px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+    border: none
+  }
+</style>
 
 <body>
 
@@ -79,24 +86,24 @@
   <section id="hero-section">
     <div class="container">
 
-      <div class="row justify-content-center mt-5">
-        <div class="col-lg-6 p-0 col-md-3 mt-4 mb-5  align-content-center text-center text-lg-start ">
-          <h1 class="hero-title">
-          Cari Sponsor Acara dengan Lebih Lancar!
-          </h1>
+      <div class="row justify-content-center m-5">
+        <div class="col-lg-8 col-md-8 align-content-center text-center text-lg-start " data-aos="fade-up">
+          <h2 class="hero-title">
+            Cari Sponsor Acara dengan Lebih Lancar!
+          </h2>
           <p class="hero-subTitle">
-          Sekarang, Anda bisa lebih mudah menemukan sponsor acara. Platform kami telah menyederhanakan prosesnya, membuat Anda dapat dengan cepat terhubung dengan calon sponsor dan mengamankan kemitraan tanpa kesulitan.
+            Sekarang, Anda bisa lebih mudah menemukan sponsor acara. Platform kami telah menyederhanakan prosesnya, membuat Anda dapat dengan cepat terhubung dengan calon sponsor dan mengamankan kemitraan tanpa kesulitan.
           </p>
           <a class="btn btn-primary" href="{{ route('company') }}" style="width: 100px;height:40px; background-color: #053CC9;">Ayo cari</a>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 justify-center">
-          <img src="ASSETS/Gambar_hero.png" />
+        <div class="col-lg-4 col-md-6 col-sm-12 justify-content-end">
+          <img src="ASSETS/Gambar_hero.png" data-aos="fade-up" />
         </div>
       </div>
 
     </div>
 
-    <img src="ASSETS/Hero_effect.png" class="effect" style="width:100vw" />
+    <img src="ASSETS/Hero_effect.png" class="effect" style="width:100vw;margin-top:-90px !important;" data-aos="fade-up" />
   </section>
 
 
@@ -104,38 +111,38 @@
 
 
 
-  <!-- shortcut servcice section --> 
+  <!-- shortcut servcice section -->
   <section id="shortcut_service mt-5" data-aos="fade-up">
+    <h1 style="text-align: center; margin-top : 70px;margin-bottom : 70px; font-weight : 700; font-size : 40px;">Layanan kami</h1>
     <div class="container">
-      <div class="row g-4 justify-content-center">
-        <h1 style="text-align: center; margin-top : 70px;margin-bottom : 70px; font-weight : 700; font-size : 40px;">Layanan kami</h1>
-        <div class="col-md-4" data-aos="fade-up">
-          <div class="card mb-3" style="max-width: 540px;">
+      <div class="row g-0 justify-content-center">
+        <div class="col-md-6 d-flex justify-content-center" data-aos="fade-up">
+          <div class="card mb-3 custom-card" style="max-width: 540px;">
             <div class="row g-0">
-              <div class="col-md-4 align-content-center p-5">
-                <img src="ASSETS/icon/upload.png" alt="upload event">
+              <div class="col-md-3 d-flex align-items-center justify-content-center align-content-center p-5">
+                <img src="ASSETS/icon/upload.png" alt="upload event" style="max-width: 80px;max-height:80px">
               </div>
-              <div class="col-md-8">
+              <div class="col-md-9">
                 <div class="card-body">
                   <h3 class="card-title" style="font-weight: 700;">Upload Event Ormawa dan UKM</h3>
-                  <p class="card-text" style="font-size: 16px;">Unggah eventmu disini dan masuk dalam katalog!</p>
+                  <p class="card-text" style="font-size: 18px;">Unggah eventmu disini dan masuk dalam katalog!</p>
                   <p class="card-text"><a href="/event" style="text-decoration:none">Lihat detail</a></p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-  
-        <div class="col-md-4" data-aos="fade-up">
-          <div class="card mb-3" style="max-width: 540px;">
+
+        <div class="col-md-6 d-flex justify-content-center" data-aos="fade-up">
+          <div class="card mb-3 custom-card" style="max-width: 540px; ">
             <div class="row g-0">
-              <div class="col-md-4 align-content-center p-5">
-                <img src="ASSETS/icon/katalog.png" alt="upload event">
+              <div class="col-md-3 d-flex align-items-center justify-content-center align-content-center p-5">
+                <img src="ASSETS/icon/katalog.png" alt="upload event" style="max-width: 80px;max-height:80px">
               </div>
-              <div class="col-md-8">
+              <div class="col-md-9">
                 <div class="card-body">
                   <h3 class="card-title" style="font-weight: 700;">Katalog Event Tel-U Surabaya</h3>
-                  <p class="card-text" style="font-size: 16px;">Semua acara pada kampus Tel-U tersedia disini</p>
+                  <p class="card-text" style="font-size: 18px;">Semua acara ormawa/UKM kampus Tel-U tersedia disini</p>
                   <p class="card-text"><a href="/event" style="text-decoration:none">Lihat detail</a></p>
                 </div>
               </div>
@@ -143,33 +150,33 @@
           </div>
         </div>
       </div>
-      <div class="row g-4 justify-content-center mt-2 " data-aos="fade-up">
-        <div class="col-md-4" data-aos="fade-up">
-          <div class="card mb-3" style="max-width: 540px;">
+      <div class="row g-2 justify-content-center mt-2 " data-aos="fade-up">
+        <div class="col-md-6 d-flex justify-content-center" data-aos="fade-up">
+          <div class="card mb-3 custom-card" style="max-width: 540px;">
             <div class="row g-0">
-              <div class="col-md-4 align-content-center p-5">
+              <div class="col-md-3 d-flex align-items-center justify-content-center align-content-center p-5">
                 <img src="ASSETS/icon/pengajuan.png" alt="upload event">
               </div>
-              <div class="col-md-8">
+              <div class="col-md-9">
                 <div class="card-body">
                   <h3 class="card-title" style="font-weight: 700;">Pengajuan Sponsor</h3>
-                  <p class="card-text" style="font-size: 16px;">Sponsorship dengan perusahaan <br>mitra</p>
+                  <p class="card-text" style="font-size: 18px;">Ajukan sponsorship dengan perusahaan mitra kami!</p>
                   <p class="card-text"><a href="/company" style="text-decoration:none">Lihat detail</a></p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4" data-aos="fade-up">
-          <div class="card mb-3" style="max-width: 540px;">
+        <div class="col-md-6 d-flex justify-content-center" data-aos="fade-up">
+          <div class="card mb-3 custom-card" style="max-width: 540px;">
             <div class="row g-0">
-              <div class="col-md-4 align-content-center p-5">
+              <div class="col-md-3 d-flex align-items-center justify-content-center align-content-center p-5">
                 <img src="ASSETS/icon/event.png" alt="upload event">
               </div>
-              <div class="col-md-8">
+              <div class="col-md-9">
                 <div class="card-body">
                   <h3 class="card-title" style="font-weight: 700;">Event Owner Dari Kami</h3>
-                  <p class="card-text" style="font-size: 16px;">Upload eventmu sekaligus pengajuan sponsorship</p>
+                  <p class="card-text" style="font-size: 18px;">Upload eventmu sekaligus pengajuan sponsorship</p>
                   <p class="card-text"><a href="/event" style="text-decoration:none">Lihat detail</a></p>
                 </div>
               </div>
@@ -190,44 +197,37 @@
         <p style="text-align: center; margin-bottom: 70px;color:#737373;">Pengajuan sponsor melewati kami,kami menyediakan list perusahaan yang dapat anda ajukan sponsor.Ikuti langkah-langkah<br>dibawah ini untuk melakukan pengajuan sponsor untuk kegiatan anda</p>
       </div>
 
-      <div class="col-md-4 col-sm-12 m-4" style="width:340px">
-
+      <div class="col-md-4 col-sm-12 m-4 sponsor-step" style="width:340px">
         <img src="ASSETS/icon/mitra.png" class="card-img-top" alt="" style="height:110px;width: 110px;margin-bottom:40px;margin-top:40px">
         <h2 class="card-title" style="font-weight:700;margin-bottom:20px">Pilih menu mitra</h2>
         <p class="card-text" style="font-size:16px;margin-bottom:30px">Anda akan ditampilkan list mitra kemudian pilih salah satu mitra dan tekan button pengajuan </p>
-
         <i class="fa-solid fa-arrow-right" style="color:#053CC9;font-size:30px;margin-bottom:30px"></i>
       </div>
 
-      <div class="col-md-4 col-sm-12 m-4" style="width:340px;background-color:#053CC9">
-
+      <div class="col-md-4 col-sm-12 m-4 sponsor-step" style="width:340px;background-color:#053CC9">
         <img src="ASSETS/icon/gForm.png" class="card-img-top" alt="" style="height:110px;width: 110px;margin-bottom:40px;margin-top:40px">
         <h2 class="card-title" style="font-weight:700;margin-bottom:20px;color:#ffffff">Isi form Pengajuan</h2>
         <p class="card-text" style="font-size:16px;margin-bottom:30px;color:#ffffff">Silahkan mengisi formulir pengajuan yang bertujuan agar kami dapat mengetahui detail dari kegiatan anda</p>
-
         <i class="fa-solid fa-arrow-right" style="color:#ffffff;font-size:30px;margin-bottom:30px"></i>
       </div>
-      <div class="col-md-4 col-sm-12 m-4" style="width:340px">
 
+      <div class="col-md-4 col-sm-12 m-4 sponsor-step" style="width:340px">
         <img src="ASSETS/icon/submit.png" class="card-img-top" alt="" style="height:110px;width: 110px;margin-bottom:40px;margin-top:40px">
         <h2 class="card-title" style="font-weight:700;margin-bottom:20px">Submit form</h2>
         <p class="card-text" style="font-size:16px;margin-bottom:30px">Tekan submit kemudian kami akan berdiskusi dengan mitra terkait pengajuan sponsor yang anda ajukan</p>
-
         <i class="fa-solid fa-arrow-right" style="color:#053CC9;font-size:30px;margin-bottom:30px"></i>
       </div>
-    </div>
     </div>
   </section>
 
 
-
-  <section id="HowtoSponsor" data-aos="fade-up">
+  <section id="HowtoEvent" data-aos="fade-up">
     <div class="row justify-content-center m-4 align-content-center">
       <div class="title">
         <h1 style="text-align: center; margin-top: 70px;margin-bottom: 10px; font-weight: 700; font-size: 40px;">Upload event caranya gimana?</h1>
         <p style="text-align: center; margin-bottom: 70px;color:#737373;">Ayo segera upload event mu disini agar dapat diketahui banyak orang.Ikuti langkah-langkah dibawah ini untuk melakukan<br> pendaftaran event yang ingin anda laksanakan</p>
       </div>
-      <div class="col-md-4 col-sm-12 m-4" style="width:340px;background-color:#053CC9">
+      <div class="col-md-4 col-sm-12 m-4 event-step" style="width:340px;background-color:#053CC9">
 
         <img src="ASSETS/icon/katalog_white.png" class="card-img-top" alt="" style="height:110px;width: 110px;margin-bottom:40px;margin-top:40px">
         <h2 class="card-title" style="font-weight:700;margin-bottom:20px;color:#ffffff">Pilih menu katalog</h2>
@@ -236,7 +236,7 @@
         <i class="fa-solid fa-arrow-right" style="color:#ffffff;font-size:30px;margin-bottom:30px"></i>
       </div>
 
-      <div class="col-md-4 col-sm-12 m-4" style="width:340px">
+      <div class="col-md-4 col-sm-12 m-4 event-step" style="width:340px">
 
         <img src="ASSETS/icon/gForm.png" class="card-img-top" alt="" style="height:110px;width: 110px;margin-bottom:40px;margin-top:40px">
         <h2 class="card-title" style="font-weight:700;margin-bottom:20px">Isi formulir event</h2>
@@ -245,7 +245,7 @@
         <i class="fa-solid fa-arrow-right" style="color:#053CC9;font-size:30px;margin-bottom:30px"></i>
       </div>
 
-      <div class="col-md-4 col-sm-12 m-4" style="width:340px;background-color:#053CC9">
+      <div class="col-md-4 col-sm-12 m-4 event-step" style="width:340px;background-color:#053CC9">
 
         <img src="ASSETS/icon/submit_white.png" class="card-img-top" alt="" style="height:110px;width: 110px;margin-bottom:40px;margin-top:40px">
         <h2 class="card-title" style="font-weight:700;margin-bottom:20px;color:#ffffff">Submit form</h2>
@@ -283,7 +283,7 @@
                 <img src="{{ asset('storage/' . $event->user->photo) }}" alt="{{ $event->user->name }}" style="width: 40px; height: 40px; border-radius: 50%; margin-right: 10px;">
                 <p style="color:#737373;margin-bottom:0">{{ $event->user->name }}</p>
               </div>
-              <a  href="{{ route('detailEvent', ['id' => $event->id]) }}" class="btn btn-primary">Detail</a>
+              <a href="{{ route('detailEvent', ['id' => $event->id]) }}" class="btn btn-primary">Detail</a>
             </div>
           </div>
         </div>
@@ -297,29 +297,29 @@
   <section id="logo-section" style="margin-top:120px;margin-bottom:120px" data-aos="fade-up">
     <div class="container">
       <div class="col-md-12 m-4 mb-5">
-            <h1 style="text-align: left;margin-bottom:30px;font-weight : 600; font-size : 48px;">Mitra Kamip</h1>
-            <hr style="border-top: 2px solid #737373;margin-bottom:10px">
-          </div>
-          <div class="row justify-content-center">
-  <div class="col-lg-2 col-md-3 col-sm-4 mt-5 d-flex justify-content-center">
-    <img src="ASSETS/logo/bri.png" alt="BRI Logo" class="img-fluid">
-  </div>
-  <div class="col-lg-2 col-md-3 col-sm-4 mt-5 d-flex justify-content-center">
-    <img src="ASSETS/logo/telkom.png" alt="Telkom Logo" class="img-fluid">
-  </div>
-  <div class="col-lg-2 col-md-3 col-sm-4 mt-5 d-flex justify-content-center">
-    <img src="ASSETS/logo/mandiri.png" alt="Mandiri Logo" class="img-fluid">
-  </div>
-  <div class="col-lg-2 col-md-3 col-sm-4 mt-5 d-flex justify-content-center">
-    <img src="ASSETS/logo/pertamina.png" alt="Pertamina Logo" class="img-fluid">
-  </div>
-  <div class="col-lg-2 col-md-3 col-sm-4 mt-5 d-flex justify-content-center">
-    <img src="ASSETS/logo/indofood.png" alt="Indofood Logo" class="img-fluid">
-  </div>
-  <div class="col-lg-2 col-md-3 col-sm-4 mt-5 d-flex justify-content-center">
-    <img src="ASSETS/logo/unilever.png" alt="Unilever Logo" class="img-fluid">
-  </div>
-</div>
+        <h1 style="text-align: left;margin-bottom:30px;font-weight : 600; font-size : 48px;">Mitra Kamip</h1>
+        <hr style="border-top: 2px solid #737373;margin-bottom:10px">
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-2 col-md-3 col-sm-4 mt-5 d-flex justify-content-center">
+          <img src="ASSETS/logo/bri.png" alt="BRI Logo" class="img-fluid">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 mt-5 d-flex justify-content-center">
+          <img src="ASSETS/logo/telkom.png" alt="Telkom Logo" class="img-fluid">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 mt-5 d-flex justify-content-center">
+          <img src="ASSETS/logo/mandiri.png" alt="Mandiri Logo" class="img-fluid">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 mt-5 d-flex justify-content-center">
+          <img src="ASSETS/logo/pertamina.png" alt="Pertamina Logo" class="img-fluid">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 mt-5 d-flex justify-content-center">
+          <img src="ASSETS/logo/indofood.png" alt="Indofood Logo" class="img-fluid">
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 mt-5 d-flex justify-content-center">
+          <img src="ASSETS/logo/unilever.png" alt="Unilever Logo" class="img-fluid">
+        </div>
+      </div>
 
     </div>
   </section>
@@ -361,24 +361,49 @@
   </section>
 
 
-  <footer>
+  <footer style="background-color: #000033;">
+    <div class="container p-4">
+      <div class="row mt-4 m-3 justify-content-center">
+        <hr style="border-top: 4px solid #FFFFFF !important;margin-bottom:20px">
+        <div class="col-md-3 align-content-center ">
+          <img src="ASSETS/Logo_white.png" alt="Sponsor Event" style="width: 250px; height : 80px;">
+          <p style="color: white; margin-top:20px;">Katalog event bagi mahasiswa
+            Telkom University <br>Surabaya dengan
+            penyedia layanan <br>pecarian sponsorship untuk acara.</p>
+        </div>
+        <div class="col-md-2 align-content-center" style="color: white;">
+          <P><a href="/home" style="text-decoration: none; "><small class="text-body-secondary" style="color:#2959D3 !important;font-size:16px">Beranda</small></a></P>
+          <P><a href="/services" style="text-decoration: none; "><small class="text-body-secondary" style="color:#ffffff !important;font-size:16px">Layanan Kami</small></a></p>
+          <P><a href="/event" style="text-decoration: none; "><small class="text-body-secondary" style="color:#ffffff !important;font-size:16px">Event Berlangsung</small></a></p>
+          <P><a href="/home#review-section" style="text-decoration: none; "><small class="text-body-secondary" style="color:#ffffff !important;font-size:16px">Testimoni</small></a></p>
+        </div>
+        <div class="col-md-2 align-content-center">
+          <p><a href="/about" style="text-decoration: none;"><small class="text-body-secondary" style="color:#2959D3 !important; font-size:16px;">Tentang kami</small></a></p>
+          <p><a href="/about#latar_belakang" style="text-decoration: none;"><small class="text-body-secondary" style="color:#ffffff !important; font-size:16px;">Latar Belakang</small></a></p>
+          <p><a href="#" style="text-decoration: none;"><small class="text-body-secondary" style="color:#000033 !important; font-size:16px;">___</small></a></p>
+          <p><a href="#" style="text-decoration: none;"><small class="text-body-secondary" style="color:#000033 !important; font-size:16px;">___</small></a></p>
+        </div>
+        <div class="col-md-2 align-content-center">
+          <p><a href="/services" style="text-decoration: none;"><small class="text-body-secondary" style="color:#2959D3 !important; font-size:16px;">Layanan Kami</small></a></p>
+          <p><a href="/home#HowtoSponsor" style="text-decoration: none;"><small class="text-body-secondary" style="color:#ffffff !important; font-size:16px;">Pengajuan Sponsorship</small></a></p>
+          <p><a href="/home#HowtoEvent" style="text-decoration: none;"><small class="text-body-secondary" style="color:#ffffff !important; font-size:16px;">Promosi Acara</small></a></p>
+          <p><a href="#" style="text-decoration: none;"><small class="text-body-secondary" style="color:#000033 !important; font-size:16px;color:#000033">___</small></a></p>
+        </div>
 
-    <div class="row justify-content-center" style="background-color: #000033;" data-aos="fade-up">
-      <div class="col-md-3 m-4 align-content-center mx-auto">
-        <img src="ASSETS/Logo_white.png" alt="Sponsor Event" style="width: 250px; height : 80px;">
-        <p style="color: white; margin-top:20px;">Katalog event bagi mahasiswa
-          Telkom University <br>Surabaya dengan
-          penyedia layanan <br>pecarian sponsorship untuk acara.</p>
-      </div>
-
-      <div class="col-md-4 m-5  align-content-center" style="color: white;">
-        <h2 style="margin-bottom: 20px;">Contact Info</h2>
-
-        <p> <i class="fa-solid fa-location-dot" style="color: #ffffff; margin-right : 10px;"></i>Jl. Ketintang No.156, Ketintang, <br>Kec. Gayungan, Surabaya, Jawa Timur 60231</p>
-        <p> <i class="fa-solid fa-phone" style="color: #ffffff;margin-right : 10px;"></i>(330)7891-5568</p>
-        <p> <i class="fa-solid fa-envelope" style="color: #ffffff; margin-right : 10px;"></i>sponsorevent@gmail.com</p>
+        <div class="col-md-3 align-content-center" style="color: white;">
+          <p><a href="#" style="text-decoration: none;"><small class="text-body-secondary" style="color:#2959D3 !important; font-size:16px;">Info kontak</small></a></p>
+          <p><i class="fa-solid fa-phone" style="color: #ffffff;margin-right : 10px;"></i><a href="#" style="text-decoration: none;"><small class="text-body-secondary" style="color:#ffffff !important; font-size:16px;">: 081359563203</small></a></p>
+          <p><i class="fa-solid fa-location-dot" style="color: #ffffff; margin-right : 10px;"></i><a href="#" style="text-decoration: none;"><small class="text-body-secondary" style="color:#ffffff !important; font-size:16px;">: Jalan Ketintang No.156, Ketintang, Kec.Gayungan, Surabaya, Jawa Timur 60231</small></a></p>
+        </div>
       </div>
     </div>
+
+    <div class="row p-3 justify-content-center" style="background-color:#ffffff">
+      <div class="col-md-12 align-content-end" style="background-color:#ffffff">
+        <p style="color:#5E6E89 !important;margin-left:80px;font-weight:600">©SponsorEvent All Rights Reserved.</p>
+      </div>
+    </div>
+
   </footer>
 
 
@@ -389,8 +414,8 @@
 
 <script>
   AOS.init({
-    duration: 1500, 
-    once: true, 
+    duration: 1500,
+    once: true,
   });
 </script>
 

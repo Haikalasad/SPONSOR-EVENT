@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <link rel="stylesheet" href="CSS/LoginRegist.css">
+    <link rel="icon" href="{{asset('ASSETS/icon/logo.png')}}" type="image/png">
     <style>
         #preview {
             max-width: 100px; 

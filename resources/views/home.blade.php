@@ -296,7 +296,7 @@
   <section id="logo-section" style="margin-top:120px;margin-bottom:120px" data-aos="fade-up">
     <div class="container">
       <div class="col-md-12 m-4 mb-5">
-        <h1 style="text-align: left;margin-bottom:30px;font-weight : 600; font-size : 48px;">Mitra Kamip</h1>
+        <h1 style="text-align: left;margin-bottom:30px;font-weight : 600; font-size : 48px;">Mitra Kami</h1>
         <hr style="border-top: 2px solid #737373;margin-bottom:10px">
       </div>
       <div class="row justify-content-center">

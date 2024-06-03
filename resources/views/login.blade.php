@@ -19,16 +19,16 @@
     <div class="glassmorphism-card">
         <!-- Login Section -->
         <div class="login-section">
-            <h2 class="TitleHeader">Welcome Back!</h2>
+            <h2 class="TitleHeader">Selamat datang kembali!</h2>
             <form method="POST" action="{{ route('loginUser') }}">
                  @csrf
                 <!-- Username Input -->
                 <label for="username">Username:</label>
-                <input type="text" name="username" placeholder="Enter your username" />
+                <input type="text" name="username" placeholder="Masukkan username organisasi mu" />
 
                 <!-- Password Input -->
                 <label for="password">Password:</label>
-                <input type="password" name="password" placeholder="Enter your password" />
+                <input type="password" name="password" placeholder="Masukkan password" />
 
                 <button type="submit" class="SubmitButton">Sign In</button>
             </form>

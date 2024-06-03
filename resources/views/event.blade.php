@@ -76,13 +76,13 @@
                         <a class="nav-link" href="/services">Layanan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/event">Katalog</a>
+                        <a class="nav-link active" href="/event">Katalog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/company">Mitra</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="/about">Tentang</a>
+                        <a class="nav-link" href="/about">Tentang</a>
                     </li>
                 </ul>
 

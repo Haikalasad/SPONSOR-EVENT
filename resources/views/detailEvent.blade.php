@@ -159,7 +159,7 @@
                     <p class="event-description" style="color:#0A0A0A">{{$detail->deskripsi}}</p>
                 </div>
                 <div class="col-md-12 mb-5">
-                    <h1>Syarat dan ketentuan</h1>
+                    <h1>Benefit</h1>
                     <p class="event-syarat_ketentuan" style="color:#0A0A0A">{{$detail->syarat_ketentuan}}</p>
                 </div>
             </div>

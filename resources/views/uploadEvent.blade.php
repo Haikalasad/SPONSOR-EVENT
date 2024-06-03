@@ -124,8 +124,8 @@
                 <textarea class="form-control" id="deskripsi" name="deskripsi" rows="3" placeholder="Masukkan deskripsi event" required></textarea>
             </div>
             <div class="mb-5">
-                <label for="syarat_ketentuan" class="form-label">Syarat dan Ketentuan</label>
-                <textarea class="form-control" id="syarat_ketentuan" name="syarat_ketentuan" rows="3" placeholder="Masukkan syarat dan ketentuan event " required></textarea>
+                <label for="syarat_ketentuan" class="form-label">Benefit</label>
+                <textarea class="form-control" id="syarat_ketentuan" name="syarat_ketentuan" rows="3" placeholder="Masukkan benefit yang bisa didapatkan mahasiwa" required></textarea>
             </div>
             <div class="col-md-12">
 

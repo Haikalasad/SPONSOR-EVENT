@@ -30,6 +30,9 @@
                         <a class="nav-link" aria-current="page" href="/home">Beranda</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="/about">Tentang</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="/services">Layanan</a>
                     </li>
                     <li class="nav-item">
@@ -37,9 +40,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/company">Mitra</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about">Tentang</a>
                     </li>
                 </ul>
 

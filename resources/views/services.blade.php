@@ -34,6 +34,9 @@
                         <a class="nav-link" aria-current="page" href="/home">Beranda</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="/about">Tentang</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link active" href="/services">Layanan</a>
                     </li>
                     <li class="nav-item">
@@ -41,9 +44,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/company">Mitra</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about">Tentang</a>
                     </li>
                 </ul>
 
@@ -309,7 +309,7 @@
       <div class="container">
         <div class="row align-items-center gx-3 gy-5 py-5">
           <div class="col-12 col-md-12 col-lg-5">
-            <img src="assets/person.jpg" class="img-fluid mx-auto d-block" alt="person" style="width: 500px; height: 500px; margin-right: 20px;" />
+            <img src="{{asset('ASSETS/person.jpg')}}" class="img-fluid mx-auto d-block" alt="person" style="width: 500px; height: 500px; margin-right: 20px;" />
           </div>
           <div class="col-md-12 text-center text-lg-start col-lg-7">
             <h2 class="fw-bold fs-1 pb-3" style="font-size: 40px;margin-bottom:20px">Daftarkan event anda dan ajukan sponsorship!</h2>

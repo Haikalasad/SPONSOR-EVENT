@@ -107,7 +107,7 @@
         </div>
 
         <div class="form-group mb-5">
-            <label for="syarat_ketentuan">Syarat & Ketentuan:</label>
+            <label for="syarat_ketentuan">Benefit:</label>
             <textarea class="form-control" name="syarat_ketentuan" required>{{ old('syarat_ketentuan', $event->syarat_ketentuan) }}</textarea>
         </div>
 

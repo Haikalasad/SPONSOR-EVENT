@@ -45,7 +45,7 @@
                     <input type="password" name="password" placeholder="Enter your password" />
 
                     <!-- Profile Picture Input -->
-                    <label for="profile_picture">Foto Profil:</label>
+                    <label for="profile_picture">Logo Organisasi:</label>
                     <input type="file" name="profile_picture" accept="image/*" id="profile_picture_input" onchange="previewImage(event)">
                     <!-- Preview gambar -->
                     <img id="preview" src="" alt="Preview Image">

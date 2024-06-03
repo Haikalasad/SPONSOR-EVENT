@@ -26,12 +26,6 @@
                         <a class="nav-link" aria-current="page" href="/home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/event">Catalog</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link active" href="/company">Company</a>
                     </li>
                     <li class="nav-item">

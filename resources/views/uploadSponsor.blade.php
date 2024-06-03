@@ -14,7 +14,11 @@
 
 <body>
     <!-- navbar section -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    @endphp
+
+<body>
+  <!-- navbar section -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
         <img src="{{asset('ASSETS/Logo.png')}}" style=" width: 180px;height: 40px;" />
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,18 +27,23 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="/home">Home</a>
+                        <a class="nav-link" aria-current="page" href="/home">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="/company">Company</a>
+                        <a class="nav-link" href="/services">Layanan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/about">About</a>
+                        <a class="nav-link" href="/event">Katalog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/company">Mitra</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">Tentang</a>
                     </li>
                 </ul>
 
                 @auth
-                <!-- Jika pengguna telah terotentikasi, tampilkan foto profil -->
                 <div class="dropdown">
                     <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="{{ asset('storage/' . auth()->user()->photo) }}" alt="{{ auth()->user()->name }}" style="width: 40px; height: 40px; border-radius: 50%;">
@@ -54,12 +63,12 @@
                     </ul>
                 </div>
                 @else
-                <!-- Jika pengguna belum terotentikasi, tampilkan tombol login -->
                 <a class="btn btn-primary" href="{{ route('login') }}" style="width: 100px; background-color: #053CC9;">Login</a>
                 @endauth
             </div>
         </div>
     </nav>
+
 
     <div class="container mt-5" style="margin-bottom:50px">
         <div class="col-md-12 text-center">

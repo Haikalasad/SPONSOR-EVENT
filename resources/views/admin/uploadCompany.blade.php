@@ -15,19 +15,19 @@
     <!-- navbar section -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
-            <img src="../ASSETS/logo.png" style="width: 180px;height: 40px;"" />
+            <img src="{{asset('ASSETS/Logo.png')}}" style="width: 180px;height: 40px;"" />
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="{{route('adminHome')}}">Home</a>
+                        <a class="nav-link" aria-current="page" href="{{route('adminHome')}}">Beranda</a>
                     </li>
 
 
                     <li class="nav-item">
-                        <a class="nav-link active" href="">Company</a>
+                        <a class="nav-link active" href="">Upload Mitra</a>
                     </li>
 
                 </ul>

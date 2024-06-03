@@ -68,7 +68,7 @@
     <!-- navbar section -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
-            <img src="../ASSETS/logo.png" style=" width: 180px;height: 40px;" />
+        <img src="{{asset('ASSETS/Logo.png')}}" style=" width: 180px;height: 40px;" />
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -81,10 +81,10 @@
                         <a class="nav-link" href="/services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="">Catalog</a>
+                        <a class="nav-link" href="/event">Catalog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Company</a>
+                        <a class="nav-link active" href="/company">Company</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/about">About</a>

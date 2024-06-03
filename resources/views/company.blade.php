@@ -30,58 +30,57 @@ $perusahaan = \App\Models\Perusahaan::all();
 <body>
   <!-- navbar section -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container">
-      <img src="ASSETS/logo.png" style=" width: 180px;
-  height: 40px;
-" />
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="/home">Beranda</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/services">Layanan</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/event">Katalog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="">Mitra</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/about">Tentang</a>
-          </li>
-        </ul>
+        <div class="container">
+        <img src="{{asset('ASSETS/Logo.png')}}" style=" width: 180px;height: 40px;" />
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/event">Catalog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/company">Company</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                </ul>
 
-        @auth
-        <div class="dropdown">
-          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="{{ asset('storage/' . auth()->user()->photo) }}" alt="{{ auth()->user()->name }}" style="width: 40px; height: 40px; border-radius: 50%;">
-          </button>
-          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-            <li><a class="dropdown-item" href="#">Profile</a></li>
-            <li><a class="dropdown-item" href="#">Settings</a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li>
-              <form action="{{ route('logout') }}" method="post">
-                @csrf
-                <button type="submit" class="dropdown-item" style="color:red">Logout<i class="fa-solid fa-arrow-right-from-bracket" style="color:red;margin-left:10px"></i></button>
-              </form>
-            </li>
-          </ul>
+                @auth
+                <!-- Jika pengguna telah terotentikasi, tampilkan foto profil -->
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="{{ asset('storage/' . auth()->user()->photo) }}" alt="{{ auth()->user()->name }}" style="width: 40px; height: 40px; border-radius: 50%;">
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <form action="{{ route('logout') }}" method="post">
+                                @csrf
+                                <button type="submit" class="dropdown-item" style="color:red">Logout<i class="fa-solid fa-arrow-right-from-bracket" style="color:red;margin-left:10px"></i></button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+                @else
+                <!-- Jika pengguna belum terotentikasi, tampilkan tombol login -->
+                <a class="btn btn-primary" href="{{ route('login') }}" style="width: 100px; background-color: #053CC9;">Login</a>
+                @endauth
+            </div>
         </div>
-        @else
-        <a class="btn btn-primary" href="{{ route('login') }}" style="width: 100px; background-color: #053CC9;">Login</a>
-        @endauth
-      </div>
-    </div>
-  </nav>
-
+    </nav>
 
   <div class="row" data-aos="fade-up">
     <div class="col-md-12 text-center">

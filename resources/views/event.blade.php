@@ -145,8 +145,6 @@
         </div>
       </div>
 
-
-
       <div class="row" data-aos="fade-up">
         @foreach ($newEvents as $event)
         <div class="col-md-6 mb-4">

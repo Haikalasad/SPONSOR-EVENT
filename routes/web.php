@@ -12,7 +12,7 @@ Route::get('/home', [HomeController::class, 'showHome'])->name('home');
 
 
 Route::get('/about', function () {
-    return view('About');
+    return view('about');
 });
 
 Route::get('/services', function () {

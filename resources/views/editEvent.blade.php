@@ -166,7 +166,7 @@
       <div class="row mt-4 m-3 justify-content-center">
         <hr style="border-top: 4px solid #FFFFFF !important;margin-bottom:20px">
         <div class="col-md-3 align-content-center ">
-          <img src="{{asset("ASSETS/Logo_white.png")}}ASSETS/Logo_white.png" alt="Sponsor Event" style="width: 250px; height : 80px;">
+          <img src="{{asset('ASSETS/Logo_white.png')}}ASSETS/Logo_white.png" alt="Sponsor Event" style="width: 250px; height : 80px;">
           <p style="color: white; margin-top:20px;">Katalog event bagi mahasiswa
             Telkom University <br>Surabaya dengan
             penyedia layanan <br>pecarian sponsorship untuk acara.</p>

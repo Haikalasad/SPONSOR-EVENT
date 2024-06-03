@@ -149,6 +149,11 @@
             reader.readAsDataURL(event.target.files[0]);
         }
 
+    
+        AOS.init({
+            duration: 1500,
+            once: true,
+        });
     </script>
 </body>
 

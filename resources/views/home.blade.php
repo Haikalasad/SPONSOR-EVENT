@@ -286,7 +286,7 @@
             </div>
 
             <!-- Step 1 -->
-            <div class="col-md-4 col-sm-12 m-4 sponsor-step">
+            <div class="col-md-5 col-sm-12 m-4 sponsor-step">
                 <div class="step-content">
                     <div class="step-number">1</div>
                     <img src="ASSETS/icon/mitra.png" class="card-img-top" alt="" />
@@ -297,7 +297,7 @@
             </div>
 
             <!-- Step 2 -->
-            <div class="col-md-4 col-sm-12 m-4 sponsor-step">
+            <div class="col-md-5 col-sm-12 m-4 sponsor-step">
                 <div class="step-content">
                     <div class="step-number">2</div>
                     <img src="ASSETS/icon/gForm.png" class="card-img-top" alt="" />
@@ -308,7 +308,7 @@
             </div>
 
             <!-- Step 3 -->
-            <div class="col-md-4 col-sm-12 m-4 sponsor-step">
+            <div class="col-md-5 col-sm-12 m-4 sponsor-step">
                 <div class="step-content">
                     <div class="step-number">3</div>
                     <img src="ASSETS/icon/submit.png" class="card-img-top" alt="" />
@@ -319,7 +319,7 @@
             </div>
 
             <!-- Step 4 -->
-            <div class="col-md-4 col-sm-12 m-4 sponsor-step">
+            <div class="col-md-5 col-sm-12 m-4 sponsor-step">
                 <div class="step-content">
                     <div class="step-number">4</div>
                     <img src="{{asset('ASSETS/verify.png')}}" class="card-img-top" alt="" />
@@ -349,7 +349,7 @@
             </div>
 
             <!-- Step 1 -->
-            <div class="col-md-4 col-sm-12 m-4 sponsor-step">
+            <div class="col-md-5 col-sm-12 m-4 sponsor-step">
                 <div class="step-content">
                     <div class="step-number">1</div>
                     <img src="ASSETS/icon/katalog.png" class="card-img-top" alt="" />
@@ -360,7 +360,7 @@
             </div>
 
             <!-- Step 2 -->
-            <div class="col-md-4 col-sm-12 m-4 sponsor-step">
+            <div class="col-md-5 col-sm-12 m-4 sponsor-step">
                 <div class="step-content">
                     <div class="step-number">2</div>
                     <img src="ASSETS/icon/gForm.png" class="card-img-top" alt="" />
@@ -371,7 +371,7 @@
             </div>
 
             <!-- Step 3 -->
-            <div class="col-md-4 col-sm-12 m-4 sponsor-step">
+            <div class="col-md-5 col-sm-12 m-4 sponsor-step">
                 <div class="step-content">
                     <div class="step-number">3</div>
                     <img src="ASSETS/icon/submit.png" class="card-img-top" alt="" />
@@ -382,7 +382,7 @@
             </div>
 
             <!-- Step 4 -->
-            <div class="col-md-4 col-sm-12 m-4 sponsor-step">
+            <div class="col-md-5 col-sm-12 m-4 sponsor-step">
                 <div class="step-content">
                     <div class="step-number">4</div>
                     <img src="{{asset('ASSETS/verify.png')}}" class="card-img-top" alt="" />

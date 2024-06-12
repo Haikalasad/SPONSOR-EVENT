@@ -58,7 +58,7 @@ class RegistController extends Controller
             ]);
         }
     
-        return redirect('/')->with('success', 'Account created successfully. Please login.');
+        return redirect('/login')->with('success', 'Account created successfully. Please login.');
     }
     /**
      * Display the specified resource.

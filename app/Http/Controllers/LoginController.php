@@ -22,7 +22,7 @@ class LoginController extends Controller
         if (strpos(Auth::user()->username, 'admin') !== false) {
             return redirect()->intended('/adminHome');
         }
-        return redirect()->intended('/home');
+        return redirect()->intended('/');
     }
     return redirect()->back()->withInput($request->only('username'))->withErrors(['username' => 'Nama atau password salah']);
 }

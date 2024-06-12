@@ -8,7 +8,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\AdminController;
 
-Route::get('/home', [HomeController::class, 'showHome'])->name('home');
+Route::get('/', [HomeController::class, 'showHome'])->name('home');
 
 
 Route::get('/about', function () {
@@ -25,7 +25,7 @@ Route::get('/signup',[RegistController::class,'create'])->name('showRegist');
 
 Route::post('/RegistProcess',[RegistController::class,'store'])->name('storeUser');
 
-Route::get('/', [LoginController::class, 'showLoginForm'])->name('login');
+Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login',[LoginController::class,'login'])->name('loginUser');
 Route::post('/logout', [LoginController::class,'logout'])->name('logout');
 

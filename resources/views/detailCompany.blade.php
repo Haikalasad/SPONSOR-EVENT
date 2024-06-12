@@ -11,13 +11,14 @@
     <title>Detail Event</title>
     <link rel="icon" href="ASSETS/icon/logo.png" type="image/png">
     <style>
-       .event-img {
+        .event-img {
             width: 100%;
-            max-height: 500px; 
+            max-height: 500px;
             object-fit: cover;
             border-radius: 30px;
             margin-bottom: 50px;
         }
+
         .vertical-divider {
             display: inline-block;
             width: 1px;
@@ -66,7 +67,8 @@
         .user-name {
             margin-bottom: 0;
         }
-        .card-text{
+
+        .card-text {
             margin-bottom: 0;
         }
     </style>
@@ -76,14 +78,14 @@
     <!-- navbar section -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
-        <img src="{{asset('ASSETS/Logo.png')}}" style=" width: 180px;height: 40px;" />
+            <img src="{{asset('ASSETS/Logo.png')}}" style=" width: 180px;height: 40px;" />
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="/home">Beranda</a>
+                        <a class="nav-link" aria-current="page" href="/">Beranda</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/about">Tentang</a>
@@ -133,17 +135,20 @@
                             <h1 style="font-weight: 600; font-size: 40px;">{{$detail->nama_perusahaan}}</h1>
                         </div>
                     </div>
-                <div class="col-md-12 text-center">
-                    <img src="{{ asset('storage/' . $detail->gambar_perusahaan) }}" alt="{{ $detail->nama_perusahaan }}" class="event-img mb-4">
-                </div>
+                    <div class="col-md-12 text-center">
+                        <img src="{{ asset('storage/' . $detail->gambar_perusahaan) }}" alt="{{ $detail->nama_perusahaan }}" class="event-img mb-4">
+                    </div>
                 </div>
                 <div class="col-md-12 mb-4">
                     <div class="company-info">
-                        <i class="fa-solid fa-location-dot" style="color:#939393;margin-right:10px"></i> <p class="card-text" style="font-weight:600">{{ $detail->alamat_perusahaan }}</p>
+                        <i class="fa-solid fa-location-dot" style="color:#939393;margin-right:10px"></i>
+                        <p class="card-text" style="font-weight:600">{{ $detail->alamat_perusahaan }}</p>
                         <span class="vertical-divider"></span>
-                        <i class="fa-solid fa-envelope"style="color:#939393;margin-right:10px"></i> <p class="card-text" style="font-weight:600">{{ $detail->email }}</p> 
+                        <i class="fa-solid fa-envelope" style="color:#939393;margin-right:10px"></i>
+                        <p class="card-text" style="font-weight:600">{{ $detail->email }}</p>
                         <span class="vertical-divider"></span>
-                        <i class="fa-solid fa-phone" style="color:#939393;margin-right:10px"></i><p class="card-text" style="font-weight:600">{{ $detail->contact_person }}</p>
+                        <i class="fa-solid fa-phone" style="color:#939393;margin-right:10px"></i>
+                        <p class="card-text" style="font-weight:600">{{ $detail->contact_person }}</p>
                     </div>
                 </div>
                 <div class="col-md-12 mb-5">
@@ -153,8 +158,13 @@
                     <h1>Syarat dan ketentuan</h1>
                     <p class="event-syarat_ketentuan" style="color:#0A0A0A">{{$detail->syarat_ketentuan}}</p>
                 </div>
-              <a class="btn btn-primary" href="{{ route('formSponsor', ['id' => $detail->id]) }}" style="margin-bottom:90px">Ajukan sponsor</a>
 
+
+                @auth
+                <a class="btn btn-primary" href="{{ route('formSponsor', ['id' => $detail->id]) }}" style="margin-bottom:90px">Ajukan sponsor</a>
+                @else
+                <a class="btn btn-primary" href="{{ route('login') }}" style="margin-bottom:90px">Mohon untuk login terlebih dahulu</a>
+                @endauth
             </div>
 
         </div>
@@ -165,48 +175,48 @@
 
 <footer style="background-color: #000033;">
     <div class="container p-4">
-      <div class="row mt-4 m-3 justify-content-center">
-        <hr style="border-top: 4px solid #FFFFFF !important;margin-bottom:20px">
-        <div class="col-md-3 align-content-center ">
-          <img src="/ASSETS/Logo_white.png" alt="Sponsor Event" style="width: 250px; height : 80px;">
-          <p style="color: white; margin-top:20px;">Katalog event bagi mahasiswa
-            Telkom University <br>Surabaya dengan
-            penyedia layanan <br>pecarian sponsorship untuk acara.</p>
-        </div>
-        <div class="col-md-2 align-content-center" style="color: white;">
-          <P><a href="/home" style="text-decoration: none; "><small class="text-body-secondary" style="color:#2959D3 !important;font-size:16px">Beranda</small></a></P>
-          <P><a href="/services" style="text-decoration: none; "><small class="text-body-secondary" style="color:#ffffff !important;font-size:16px">Layanan Kami</small></a></p>
-          <P><a href="/event" style="text-decoration: none; "><small class="text-body-secondary" style="color:#ffffff !important;font-size:16px">Event Berlangsung</small></a></p>
-          <P><a href="/home#review-section" style="text-decoration: none; "><small class="text-body-secondary" style="color:#ffffff !important;font-size:16px">Testimoni</small></a></p>
-        </div>
-        <div class="col-md-2 align-content-center">
-          <p><a href="/about" style="text-decoration: none;"><small class="text-body-secondary" style="color:#2959D3 !important; font-size:16px;">Tentang kami</small></a></p>
-          <p><a href="/about#latar_belakang" style="text-decoration: none;"><small class="text-body-secondary" style="color:#ffffff !important; font-size:16px;">Latar Belakang</small></a></p>
-          <p><a href="#" style="text-decoration: none;"><small class="text-body-secondary" style="color:#000033 !important; font-size:16px;">___</small></a></p>
-          <p><a href="#" style="text-decoration: none;"><small class="text-body-secondary" style="color:#000033 !important; font-size:16px;">___</small></a></p>
-        </div>
-        <div class="col-md-2 align-content-center">
-          <p><a href="/services" style="text-decoration: none;"><small class="text-body-secondary" style="color:#2959D3 !important; font-size:16px;">Layanan Kami</small></a></p>
-          <p><a href="/home#HowtoSponsor" style="text-decoration: none;"><small class="text-body-secondary" style="color:#ffffff !important; font-size:16px;">Pengajuan Sponsorship</small></a></p>
-          <p><a href="/home#HowtoEvent" style="text-decoration: none;"><small class="text-body-secondary" style="color:#ffffff !important; font-size:16px;">Promosi Acara</small></a></p>
-          <p><a href="#" style="text-decoration: none;"><small class="text-body-secondary" style="color:#000033 !important; font-size:16px;color:#000033">___</small></a></p>
-        </div>
+        <div class="row mt-4 m-3 justify-content-center">
+            <hr style="border-top: 4px solid #FFFFFF !important;margin-bottom:20px">
+            <div class="col-md-3 align-content-center ">
+                <img src="/ASSETS/Logo_white.png" alt="Sponsor Event" style="width: 250px; height : 80px;">
+                <p style="color: white; margin-top:20px;">Katalog event bagi mahasiswa
+                    Telkom University <br>Surabaya dengan
+                    penyedia layanan <br>pecarian sponsorship untuk acara.</p>
+            </div>
+            <div class="col-md-2 align-content-center" style="color: white;">
+                <P><a href="/home" style="text-decoration: none; "><small class="text-body-secondary" style="color:#2959D3 !important;font-size:16px">Beranda</small></a></P>
+                <P><a href="/services" style="text-decoration: none; "><small class="text-body-secondary" style="color:#ffffff !important;font-size:16px">Layanan Kami</small></a></p>
+                <P><a href="/event" style="text-decoration: none; "><small class="text-body-secondary" style="color:#ffffff !important;font-size:16px">Event Berlangsung</small></a></p>
+                <P><a href="/home#review-section" style="text-decoration: none; "><small class="text-body-secondary" style="color:#ffffff !important;font-size:16px">Testimoni</small></a></p>
+            </div>
+            <div class="col-md-2 align-content-center">
+                <p><a href="/about" style="text-decoration: none;"><small class="text-body-secondary" style="color:#2959D3 !important; font-size:16px;">Tentang kami</small></a></p>
+                <p><a href="/about#latar_belakang" style="text-decoration: none;"><small class="text-body-secondary" style="color:#ffffff !important; font-size:16px;">Latar Belakang</small></a></p>
+                <p><a href="#" style="text-decoration: none;"><small class="text-body-secondary" style="color:#000033 !important; font-size:16px;">___</small></a></p>
+                <p><a href="#" style="text-decoration: none;"><small class="text-body-secondary" style="color:#000033 !important; font-size:16px;">___</small></a></p>
+            </div>
+            <div class="col-md-2 align-content-center">
+                <p><a href="/services" style="text-decoration: none;"><small class="text-body-secondary" style="color:#2959D3 !important; font-size:16px;">Layanan Kami</small></a></p>
+                <p><a href="/home#HowtoSponsor" style="text-decoration: none;"><small class="text-body-secondary" style="color:#ffffff !important; font-size:16px;">Pengajuan Sponsorship</small></a></p>
+                <p><a href="/home#HowtoEvent" style="text-decoration: none;"><small class="text-body-secondary" style="color:#ffffff !important; font-size:16px;">Promosi Acara</small></a></p>
+                <p><a href="#" style="text-decoration: none;"><small class="text-body-secondary" style="color:#000033 !important; font-size:16px;color:#000033">___</small></a></p>
+            </div>
 
-        <div class="col-md-3 align-content-center" style="color: white;">
-          <p><a href="#" style="text-decoration: none;"><small class="text-body-secondary" style="color:#2959D3 !important; font-size:16px;">Info kontak</small></a></p>
-          <p><i class="fa-solid fa-phone" style="color: #ffffff;margin-right : 10px;"></i><a href="#" style="text-decoration: none;"><small class="text-body-secondary" style="color:#ffffff !important; font-size:16px;">: 081359563203</small></a></p>
-          <p><i class="fa-solid fa-location-dot" style="color: #ffffff; margin-right : 10px;"></i><a href="#" style="text-decoration: none;"><small class="text-body-secondary" style="color:#ffffff !important; font-size:16px;">: Jalan Ketintang No.156, Ketintang, Kec.Gayungan, Surabaya, Jawa Timur 60231</small></a></p>
+            <div class="col-md-3 align-content-center" style="color: white;">
+                <p><a href="#" style="text-decoration: none;"><small class="text-body-secondary" style="color:#2959D3 !important; font-size:16px;">Info kontak</small></a></p>
+                <p><i class="fa-solid fa-phone" style="color: #ffffff;margin-right : 10px;"></i><a href="#" style="text-decoration: none;"><small class="text-body-secondary" style="color:#ffffff !important; font-size:16px;">: 081359563203</small></a></p>
+                <p><i class="fa-solid fa-location-dot" style="color: #ffffff; margin-right : 10px;"></i><a href="#" style="text-decoration: none;"><small class="text-body-secondary" style="color:#ffffff !important; font-size:16px;">: Jalan Ketintang No.156, Ketintang, Kec.Gayungan, Surabaya, Jawa Timur 60231</small></a></p>
+            </div>
         </div>
-      </div>
     </div>
 
     <div class="row p-3 justify-content-center" style="background-color:#ffffff">
-      <div class="col-md-12 align-content-end" style="background-color:#ffffff">
-        <p style="color:#5E6E89 !important;margin-left:80px;font-weight:600">©SponsorEvent All Rights Reserved.</p>
-      </div>
+        <div class="col-md-12 align-content-end" style="background-color:#ffffff">
+            <p style="color:#5E6E89 !important;margin-left:80px;font-weight:600">©SponsorEvent All Rights Reserved.</p>
+        </div>
     </div>
 
-  </footer>
+</footer>
 
 
 

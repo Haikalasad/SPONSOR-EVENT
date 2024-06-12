@@ -300,7 +300,7 @@
             <div class="col-md-5 col-sm-12 m-4 sponsor-step">
                 <div class="step-content">
                     <div class="step-number">4</div>
-                    <img src="ASSETS/verify.png" class="card-img-top" alt="" />
+                    <img src="{{asset('ASSETS/verify.png')}}" class="card-img-top" alt="" />
                     <h2 class="card-title">Selesai</h2>
                     <p class="card-text">Event yang anda daftarkan telah tampil pada halaman katalog,dan semua orang dapat mengetahui event anda</p>
                 </div>
@@ -358,7 +358,7 @@
             <div class="col-md-5 col-sm-12 m-4 sponsor-step">
                 <div class="step-content">
                     <div class="step-number">4</div>
-                    <img src="ASSETS/verify.png" class="card-img-top" alt="" />
+                    <img src="{{asset('ASSETS/verify.png')}}" class="card-img-top" alt="" />
                     <h2 class="card-title">Selesai</h2>
                     <p class="card-text">Pengajuan anda telah diterima dan sedang diproses. Silakan menunggu konfirmasi lebih lanjut.</p>
                 </div>

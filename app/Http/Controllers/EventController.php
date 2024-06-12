@@ -13,7 +13,7 @@ class EventController extends Controller
     {
         $newEvents = Event::orderBy('created_at', 'desc')->take(4)->get();
         
-        $events = Event::all();
+        $events = Event::orderBy('created_at', 'desc')->get();
     
         return view('event', ['newEvents' => $newEvents, 'events' => $events]);
     }

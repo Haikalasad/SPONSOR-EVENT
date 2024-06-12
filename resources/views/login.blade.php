@@ -10,7 +10,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <title>Sign In</title>
-    <link rel="icon" href="{{asset('ASSETS/icon/logo.png')}}" type="image/png">
+    <link rel="icon" href="ASSETS/icon/logo.png" type="image/png">
     <style>
         body {
             background-image: url('/ASSETS/bg_login.png');

@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <title>Event</title>
-  <link rel="icon" href="{{asset('ASSETS/icon/logo.png')}}" type="image/png">
+  <link rel="icon" href="ASSETS/icon/logo.png" type="image/png">
 
   <style>
     .overlay {

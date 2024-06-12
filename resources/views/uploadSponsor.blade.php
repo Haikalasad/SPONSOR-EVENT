@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/fadd57a8f9.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Pengajuan Sponsor</title>
-    <link rel="icon" href="{{asset('ASSETS/icon/logo.png')}}" type="image/png">
+    <link rel="icon" href="ASSETS/icon/logo.png" type="image/png">
 </head>
 
 <body>

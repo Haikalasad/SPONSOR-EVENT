@@ -57,6 +57,97 @@
       object-fit: cover;
       border: none;
     }
+
+
+    #HowtoSponsor {
+    padding: 50px 0;
+}
+
+#HowtoSponsor .title h1 {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+#HowtoSponsor .title p {
+    text-align: center;
+    margin-bottom: 70px;
+    color: #737373;
+}
+
+#HowtoSponsor .sponsor-step {
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+#HowtoSponsor .sponsor-step:hover {
+    transform: translateY(-10px);
+}
+
+#HowtoSponsor .step-content {
+    position: relative;
+    padding: 20px;
+}
+
+#HowtoSponsor .step-number {
+    background-color: #053CC9;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#HowtoSponsor .card-img-top {
+    height: 110px;
+    width: 110px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+#HowtoSponsor .card-title {
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#HowtoSponsor .card-text {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+#HowtoSponsor i {
+    color: #053CC9;
+    font-size: 30px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    transition: transform 0.3s;
+}
+
+#HowtoSponsor .sponsor-step:last-child i {
+    color: #28a745;
+}
+
+#HowtoSponsor .sponsor-step:hover i {
+    transform: translateX(10px);
+    
+}
+#HowtoSponsor .sponsor-step:hover {
+  box-shadow: 0 20px 20px rgba(4, 71, 214, 0.5), 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
   </style>
 </head>
 
@@ -93,11 +184,6 @@
                         <img src="{{ asset('storage/' . auth()->user()->photo) }}" alt="{{ auth()->user()->name }}" style="width: 40px; height: 40px; border-radius: 50%;">
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
-                        <li><a class="dropdown-item" href="#">Settings</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
                         <li>
                             <form action="{{ route('logout') }}" method="post">
                                 @csrf

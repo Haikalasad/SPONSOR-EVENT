@@ -50,11 +50,6 @@
                         <img src="{{ asset('storage/' . auth()->user()->photo) }}" alt="{{ auth()->user()->name }}" style="width: 40px; height: 40px; border-radius: 50%;">
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
-                        <li><a class="dropdown-item" href="#">Settings</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
                         <li>
                             <form action="{{ route('logout') }}" method="post">
                                 @csrf
@@ -201,7 +196,7 @@
                     <p style="margin-bottom:20px;font-size:20px;color:#89939E">
                         Sistem Informasi 2021
                     </p>
-                    <img src="ASSETS/list_icon_event.png" /><a href="/event" style="color:#0066CC;text-decoration:none;margin-left:40px;font-size:20px;font-weight:600">Lihat semua event</a><i class="fa-solid fa-arrow-right" style="font-size:18px;margin:10px;color:#0066CC"></i>
+                    <img src="ASSETS/list_icon_event.png"  class="list-icon-event" /><a href="/event" style="color:#0066CC;text-decoration:none;margin-left:40px;font-size:20px;font-weight:600">Lihat semua event</a><i class="fa-solid fa-arrow-right" style="font-size:18px;margin:10px;color:#0066CC"></i>
                 </div>
 
                 <div class="col-lg-2 col-md-4 col-sm-4 align-self-center">

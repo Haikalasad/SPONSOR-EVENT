@@ -20,6 +20,99 @@
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
     border: none
   }
+
+  #HowtoSponsor {
+    padding: 50px 0;
+}
+
+#HowtoSponsor .title h1 {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+#HowtoSponsor .title p {
+    text-align: center;
+    margin-bottom: 70px;
+    color: #737373;
+}
+
+#HowtoSponsor .sponsor-step {
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+#HowtoSponsor .sponsor-step:hover {
+    transform: translateY(-10px);
+}
+
+#HowtoSponsor .step-content {
+    position: relative;
+    padding: 20px;
+}
+
+#HowtoSponsor .step-number {
+    background-color: #053CC9;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#HowtoSponsor .card-img-top {
+    height: 110px;
+    width: 110px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+#HowtoSponsor .card-title {
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#HowtoSponsor .card-text {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+#HowtoSponsor i {
+    color: #053CC9;
+    font-size: 30px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    transition: transform 0.3s;
+}
+
+#HowtoSponsor .sponsor-step:last-child i {
+    color: #28a745;
+}
+
+#HowtoSponsor .sponsor-step:hover i {
+    transform: translateX(10px);
+    
+}
+#HowtoSponsor .sponsor-step:hover {
+  box-shadow: 0 20px 20px rgba(4, 71, 214, 0.5), 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+
 </style>
 
 <body>
@@ -59,12 +152,7 @@
                     <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="{{ asset('storage/' . auth()->user()->photo) }}" alt="{{ auth()->user()->name }}" style="width: 40px; height: 40px; border-radius: 50%;">
                     </button>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
-                        <li><a class="dropdown-item" href="#">Settings</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">    
                         <li>
                             <form action="{{ route('logout') }}" method="post">
                                 @csrf
@@ -189,80 +277,125 @@
   <!-- Section cara mendapatkan sponsor -->
 
 
-  <section id="HowtoSponsor" data-aos="fade-up">
-    <div class="row justify-content-center m-4 align-content-center" data-aos="fade-up">
-      <div class="title">
-        <h1 style="text-align: center; margin-top: 70px;margin-bottom: 10px; font-weight: 700; font-size: 40px;">Gimana sih cara untuk mengajukan sponsor? </h1>
-        <p style="text-align: center; margin-bottom: 70px;color:#737373;">Pengajuan sponsor melewati kami,kami menyediakan list perusahaan yang dapat anda ajukan sponsor.Ikuti langkah-langkah<br>dibawah ini untuk melakukan pengajuan sponsor untuk kegiatan anda</p>
-      </div>
+  <section id="HowtoSponsor" data-aos="fade-up" style="background-color: white; padding: 50px 0;">
+    <div class="container">
+        <div class="row justify-content-center m-4 align-content-center" data-aos="fade-up">
+            <div class="title">
+                <h1 style="text-align: center; margin-top: 70px; margin-bottom: 10px; font-weight: 700; font-size: 40px;">Gimana sih cara untuk mengajukan sponsor?</h1>
+                <p style="text-align: center; margin-bottom: 70px; color: #737373;">Pengajuan sponsor melewati kami, kami menyediakan list perusahaan yang dapat anda ajukan sponsor. Ikuti langkah-langkah<br>di bawah ini untuk melakukan pengajuan sponsor untuk kegiatan anda.</p>
+            </div>
 
-      <div class="col-md-4 col-sm-12 m-4 sponsor-step" style="width:340px">
-        <img src="ASSETS/icon/mitra.png" class="card-img-top" alt="" style="height:110px;width: 110px;margin-bottom:40px;margin-top:40px">
-        <h2 class="card-title" style="font-weight:700;margin-bottom:20px">Pilih menu mitra</h2>
-        <p class="card-text" style="font-size:16px;margin-bottom:30px">Anda akan ditampilkan list mitra kemudian pilih salah satu mitra dan tekan button pengajuan </p>
-        <i class="fa-solid fa-arrow-right" style="color:#053CC9;font-size:30px;margin-bottom:30px"></i>
-      </div>
+            <!-- Step 1 -->
+            <div class="col-md-4 col-sm-12 m-4 sponsor-step">
+                <div class="step-content">
+                    <div class="step-number">1</div>
+                    <img src="ASSETS/icon/mitra.png" class="card-img-top" alt="" />
+                    <h2 class="card-title">Pilih menu mitra</h2>
+                    <p class="card-text">Anda akan ditampilkan list mitra kemudian pilih salah satu mitra dan tekan button pengajuan.</p>
+                </div>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
 
-      <div class="col-md-4 col-sm-12 m-4 sponsor-step" style="width:340px;background-color:#053CC9">
-        <img src="ASSETS/icon/gForm.png" class="card-img-top" alt="" style="height:110px;width: 110px;margin-bottom:40px;margin-top:40px">
-        <h2 class="card-title" style="font-weight:700;margin-bottom:20px;color:#ffffff">Isi form Pengajuan</h2>
-        <p class="card-text" style="font-size:16px;margin-bottom:30px;color:#ffffff">Silahkan mengisi formulir pengajuan yang bertujuan agar kami dapat mengetahui detail dari kegiatan anda</p>
-        <i class="fa-solid fa-arrow-right" style="color:#ffffff;font-size:30px;margin-bottom:30px"></i>
-      </div>
+            <!-- Step 2 -->
+            <div class="col-md-4 col-sm-12 m-4 sponsor-step">
+                <div class="step-content">
+                    <div class="step-number">2</div>
+                    <img src="ASSETS/icon/gForm.png" class="card-img-top" alt="" />
+                    <h2 class="card-title">Isi form Pengajuan</h2>
+                    <p class="card-text">Silahkan mengisi formulir pengajuan yang bertujuan agar mitra kami dapat mengetahui detail dari kegiatan anda.</p>
+                </div>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
 
-      <div class="col-md-4 col-sm-12 m-4 sponsor-step" style="width:340px">
-        <img src="ASSETS/icon/submit.png" class="card-img-top" alt="" style="height:110px;width: 110px;margin-bottom:40px;margin-top:40px">
-        <h2 class="card-title" style="font-weight:700;margin-bottom:20px">Submit form</h2>
-        <p class="card-text" style="font-size:16px;margin-bottom:30px">Tekan submit kemudian kami akan berdiskusi dengan mitra terkait pengajuan sponsor yang anda ajukan</p>
-        <i class="fa-solid fa-arrow-right" style="color:#053CC9;font-size:30px;margin-bottom:30px"></i>
-      </div>
+            <!-- Step 3 -->
+            <div class="col-md-4 col-sm-12 m-4 sponsor-step">
+                <div class="step-content">
+                    <div class="step-number">3</div>
+                    <img src="ASSETS/icon/submit.png" class="card-img-top" alt="" />
+                    <h2 class="card-title">Submit form</h2>
+                    <p class="card-text">Tekan submit kemudian anda dapat menunggu hingga status pengajuan diterima.</p>
+                </div>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="col-md-4 col-sm-12 m-4 sponsor-step">
+                <div class="step-content">
+                    <div class="step-number">4</div>
+                    <img src="ASSETS/icon/verify.png" class="card-img-top" alt="" />
+                    <h2 class="card-title">Selesai</h2>
+                    <p class="card-text">Pengajuan anda telah diterima dan sedang diproses. Silakan menunggu konfirmasi lebih lanjut.</p>
+                </div>
+                <i class="fa-solid fa-check" style="color: #28a745;"></i>
+            </div>
+        </div>
     </div>
-  </section>
+</section>
 
 
-  <section id="HowtoEvent" data-aos="fade-up">
-    <div class="row justify-content-center m-4 align-content-center">
-      <div class="title">
-        <h1 style="text-align: center; margin-top: 70px;margin-bottom: 10px; font-weight: 700; font-size: 40px;">Upload event caranya gimana?</h1>
-        <p style="text-align: center; margin-bottom: 70px;color:#737373;">Ayo segera upload event mu disini agar dapat diketahui banyak orang.Ikuti langkah-langkah dibawah ini untuk melakukan<br> pendaftaran event yang ingin anda laksanakan</p>
-      </div>
-      <div class="col-md-4 col-sm-12 m-4 event-step" style="width:340px;background-color:#053CC9">
 
-        <img src="ASSETS/icon/katalog_white.png" class="card-img-top" alt="" style="height:110px;width: 110px;margin-bottom:40px;margin-top:40px">
-        <h2 class="card-title" style="font-weight:700;margin-bottom:20px;color:#ffffff">Pilih menu katalog</h2>
-        <p class="card-text" style="font-size:16px;margin-bottom:30px;color:#ffffff">Anda akan ditampilkan list katalog event Tel-U,<br>kemudian tekan button event baru.</p>
+  <!-- Cara upload event -->
 
-        <i class="fa-solid fa-arrow-right" style="color:#ffffff;font-size:30px;margin-bottom:30px"></i>
-      </div>
 
-      <div class="col-md-4 col-sm-12 m-4 event-step" style="width:340px">
 
-        <img src="ASSETS/icon/gForm.png" class="card-img-top" alt="" style="height:110px;width: 110px;margin-bottom:40px;margin-top:40px">
-        <h2 class="card-title" style="font-weight:700;margin-bottom:20px">Isi formulir event</h2>
-        <p class="card-text" style="font-size:16px;margin-bottom:30px">Silahkan mengisi formulir event yang ingin anda buat,dan buatlah informasi event yang menarik.</p>
 
-        <i class="fa-solid fa-arrow-right" style="color:#053CC9;font-size:30px;margin-bottom:30px"></i>
-      </div>
+  
+  <section id="HowtoSponsor" data-aos="fade-up" style="background-color: white; padding: 50px 0;">
+    <div class="container">
+        <div class="row justify-content-center m-4 align-content-center" data-aos="fade-up">
+            <div class="title">
+                <h1 style="text-align: center; margin-top: 70px; margin-bottom: 10px; font-weight: 700; font-size: 40px;">Upload event caranya gimana?</h1>
+                <p style="text-align: center; margin-bottom: 70px; color: #737373;">Ayo segera upload event mu disini agar dapat diketahui banyak orang.Ikuti langkah-langkah dibawah ini untuk melakukan<br> pendaftaran event yang ingin anda laksanakan</p>
+            </div>
 
-      <div class="col-md-4 col-sm-12 m-4 event-step" style="width:340px;background-color:#053CC9">
+            <!-- Step 1 -->
+            <div class="col-md-4 col-sm-12 m-4 sponsor-step">
+                <div class="step-content">
+                    <div class="step-number">1</div>
+                    <img src="ASSETS/icon/katalog.png" class="card-img-top" alt="" />
+                    <h2 class="card-title">Pilih menu katalog</h2>
+                    <p class="card-text">Anda akan ditampilkan list katalog event Tel-U kemudian tekan button upload event untuk mendaftarkan event anda.</p>
+                </div>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
 
-        <img src="ASSETS/icon/submit_white.png" class="card-img-top" alt="" style="height:110px;width: 110px;margin-bottom:40px;margin-top:40px">
-        <h2 class="card-title" style="font-weight:700;margin-bottom:20px;color:#ffffff">Submit form</h2>
-        <p class="card-text" style="font-size:16px;margin-bottom:30px;color:#ffffff">Setelah mengisi formulir event baru,tekan submit dan event mu sudah berhasil ditambahkan pada katalog.</p>
+            <!-- Step 2 -->
+            <div class="col-md-4 col-sm-12 m-4 sponsor-step">
+                <div class="step-content">
+                    <div class="step-number">2</div>
+                    <img src="ASSETS/icon/gForm.png" class="card-img-top" alt="" />
+                    <h2 class="card-title">Isi formulir event</h2>
+                    <p class="card-text">Silahkan mengisi formulir event yang ingin anda buat,dan buatlah informasi event se-menarik mungkin.</p>
+                </div>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
 
-        <i class="fa-solid fa-arrow-right" style="color:#ffffff;font-size:30px;margin-bottom:30px"></i>
-      </div>
+            <!-- Step 3 -->
+            <div class="col-md-4 col-sm-12 m-4 sponsor-step">
+                <div class="step-content">
+                    <div class="step-number">3</div>
+                    <img src="ASSETS/icon/submit.png" class="card-img-top" alt="" />
+                    <h2 class="card-title">Submit form</h2>
+                    <p class="card-text">Kemudian,tekan submit dan event yang anda daftarkan sudah berhasil tampil pada halaman katalog.</p>
+                </div>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="col-md-4 col-sm-12 m-4 sponsor-step">
+                <div class="step-content">
+                    <div class="step-number">4</div>
+                    <img src="ASSETS/icon/verify.png" class="card-img-top" alt="" />
+                    <h2 class="card-title">Selesai</h2>
+                    <p class="card-text">Event yang anda daftarkan telah tampil pada halaman katalog,dan semua orang dapat mengetahui event anda</p>
+                </div>
+                <i class="fa-solid fa-check" style="color: #28a745;"></i>
+            </div>
+        </div>
     </div>
-    </div>
-  </section>
-
-
-
-
-
+</section>
 
   <!-- Event yang berlangsung -->
-
 
   <section id="live_event" data-aos="fade-up">
     <div class="row justify-content-center m-4 align-content-center">
